@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 84.36 58.96">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        fill: none;
+      }
+
+      .cls-2, .cls-5 {
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        stroke-dasharray: 0 0 10.27 10.27;
+      }
+
+      .cls-3, .cls-6, .cls-4 {
+        stroke: #191919;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-6 {
+        fill: #00adcf;
+      }
+
+      .cls-5 {
+        fill: url(#radial-gradient);
+        opacity: .5;
+      }
+
+      .cls-7 {
+        clip-path: url(#clippath-1);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-2" x="-.73" width="85" height="59.47"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <path class="cls-2" d="M82.78,12.03s-4.76-8.28-11.42-7.4c-9.55,1.25-20.97,35.86-32.03,35.95-7.68.06-9.1-8.48-14.63-8.48s-7.32,13.83-15.17,14.81c-5.69.71-8.12-3.03-8.12-3.03l.45,14.81,81.1.27-.18-46.93Z"/>
+    </clipPath>
+    <radialGradient id="radial-gradient" cx="55.07" cy="-285.61" fx="81.13" fy="-308.1" r="34.41" gradientTransform="translate(0 331.81) scale(1 1.09)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00adcf"/>
+      <stop offset=".55" stop-color="rgba(0, 173, 207, .32)" stop-opacity=".32"/>
+      <stop offset=".81" stop-color="#00adcf" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g class="cls-1">
+    <g>
+      <g class="cls-7">
+        <rect class="cls-5" x="13.53" y="-6.28" width="83.08" height="55.15"/>
+      </g>
+      <g>
+        <line class="cls-4" x1="61.19" y1="16.58" x2="61.19" y2="20.58"/>
+        <line class="cls-3" x1="61.19" y1="30.85" x2="61.19" y2="46.25"/>
+        <line class="cls-4" x1="61.19" y1="51.39" x2="61.19" y2="55.39"/>
+      </g>
+      <path class="cls-4" d="M1.41,43.88s2.43,3.74,8.12,3.03c7.85-.98,9.64-14.81,15.17-14.81s6.95,8.54,14.63,8.48c11.06-.09,22.48-34.7,32.03-35.95,6.66-.87,11.42,7.4,11.42,7.4"/>
+      <circle class="cls-6" cx="61.19" cy="14.3" r="4.01"/>
+    </g>
+  </g>
+</svg>
