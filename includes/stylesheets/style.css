@@ -201,7 +201,9 @@ p{
 }
 
   /* ----------NAVBAR----------------- */
-
+.navbar{
+  background-color: white;
+}
 
   .navbar-custom {
     width: 90%;
@@ -570,115 +572,167 @@ p{
 
   /* ----------SERVICES----------------- */
 
-  .service-card-row {
-    width: 85%;
-    display: flex; /* Flex container to align columns */
+
+.services-div{
+  background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(252,252,252,1) 10%, rgba(252,252,252,1) 90%, rgba(255,255,255,1) 100%);
+}
+
+.service-card-row{
+  width: 85%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+
+}
+
+
+  .service-card-1, .service-card-2{
+
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    justify-content: space-between; /* Distribute space between columns */
-  }
-  
-  .service-card-1, .service-card-2, .service-card-3 {
-    display: flex; /* Flex container for internal alignment */
-    flex-direction: column; /* Stack child elements vertically */
     border-radius: 1rem;
-    height: 100%; /* Ensure the card takes up full height */
-    transition: transform 0.3s ease-in-out; /* Smooth transition for elevation effect */
+    height: fit-content;
+    z-index: 1;
   }
-  
-  /* Adjust widths and margins for layout */
-  .service-card-1 {
+
+.service-text{
+  font-size: 1rem;
+}
+
+
+  .service-card-1{
     width: 30%;
     background-color: #fff;
     margin-top: 3rem;
-    overflow: hidden;
+    border-radius: 1rem;
+    overflow-x: hidden;
+    overflow-y: hidden;
     padding: 1.5rem;
+
   }
-  
-  .service-card-2 {
-    width: 32.5%;
+
+  .service-card-1-img{
+    width: 100%;
+    border-radius: 1.2rem;
+   
+  }
+
+  .service-card-2{
     background-color: #00adcf;
-    margin-top: 3rem;
+    width: 32.5%;
+    margin-bottom: 3rem;
     background-image: url(/images/card-2-decoration.svg);
     background-repeat: no-repeat;
     background-position: bottom right;
     padding: 1.5rem;
-    /* Elevation effect for center card */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
-    transform: translateY(-10px); /* Move center card up */
   }
-  
-  .service-card-3 {
-    width: 30%;
-    background-color: #fff;
-    margin-top: 3rem;
-    overflow: hidden;
-    padding: 1.5rem;
-  }
-  
-  /* Adjust layout of cards */
-  .service-card-1 {
-    margin-right: auto; /* Pushes the first card to the left */
-  }
-  
-  .service-card-3 {
-    margin-left: auto; /* Pushes the third card to the right */
-  }
-  
-  .service-card-text-wrapper {
-    flex: 1; /* Allow the text wrapper to grow and fill available space */
-    padding-bottom: 1rem;
-  }
-  
-  .service-btn-wrapper {
-    width: fit-content;
+
+
+  .service-card-text-wrapper{
+    width: 95%;
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    display: block;
     padding-bottom: 1rem;
   }
-  
-  .service-btn-1, .service-btn-2, .service-btn-3 {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    margin-left: .5rem;
-    margin-right: .5rem;
+
+.service-btn-wrapper{
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-bottom: 1rem;
+
+}
+
+.service-btn-1, .service-btn-2, .service-btn-3{
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: .5rem;
+  margin-right: .5rem;
+}
+
+  .service-btn-1{
+    background-color:#ffffff00;
+    color:#191919;
+    border-color:#191919;
   }
-  
-  .service-btn-1 {
-    background-color: #ffffff00;
-    color: #191919;
-    border-color: #191919;
-  }
-  
-  .service-btn-1:hover {
+
+  .service-btn-1:hover{
     color: #fff;
     background-color: #191919;
   }
-  
-  .service-btn-2 {
-    background-color: #ffffff00;
-    color: #fff;
-    border-color: #fff;
+
+
+  .service-btn-2{
+    background-color:#ffffff00;
+    color:#fff;
+    border-color:#fff;
   }
-  
-  .service-btn-2:hover {
-    background-color: #fff;
-    color: #00adcf;
-    border-color: #fff;
+
+  .service-btn-2:hover{
+    background-color:#fff;
+    color:#00adcf;
+    border-color:#fff;
   }
-  
-  .service-btn-3 {
-    background-color: #fff;
-    color: #00adcf;
-    border-color: #fff;
+
+  .service-btn-3{
+    background-color:#fff;
+    color:#00adcf;
+    border-color:#fff;
   }
-  
-  .service-btn-3:hover {
-    background-color: #ffffff95;
-    border-color: #fff;
-    color: #00adcf;
+
+  .service-btn-3:hover{
+    background-color:#ffffff95;
+    border-color:#fff;
+    color:#00adcf;
   }
+
+
+  @media (min-width: 0px) and (max-width: 575.98px) {
+    .service-slide{
+width: 90% !important;
+display: block;
+margin-left: auto;
+margin-right: auto;
+padding: 1rem;
+
+    }
+  .service-card-1, .service-card-2{
+    width: fit-content;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+
+  .service-card-1, .service-card-2{
+
+    padding: 1rem;
+
+  }
+
+  .service-card-1-img, .service-card-2-img{
+    width: 100%;
+    border-radius: 1rem;
+   
+  }
+.service-btn-wrapper{
+  width: 100%;
+}
+
+
+  .service-btn-1, .service-btn-2, .service-btn-3{
+
+display: block !important;
+margin-left: auto !important;
+margin-right: auto !important;
+  }
+
+
+  }
+
+
   
 
  /* ----------CALL TO ACTION----------------- */
@@ -737,6 +791,28 @@ p{
   background-color:#fff;
   color:#00adcf;
 }
+
+@media (min-width: 0px) and (max-width: 575.98px) {
+  .call-to-action-outer{
+    background-color: #00adcf;
+    width: 100%;
+    aspect-ratio: 1/ 1;
+    background-image: url(/images/cta-bg-decoration.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-position: top left;    
+    -webkit-mask-image: none;
+    mask-image: none;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    margin-top: -3rem;
+    margin-bottom: -3rem;
+    z-index: -10;
+ 
+}
+}
+
 /* --------------------CASE STUDY--------------------------*/
 
 .case-study-emphasis{

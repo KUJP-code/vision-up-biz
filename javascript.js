@@ -1,41 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Initialize Swiper for image carousel
-  const imageCarouselSwiper = new Swiper("#image-carousel", {
-    slidesPerView: 1.75,
-    centeredSlides: true,
-    spaceBetween: 20,
-    loop: true,
-    keyboard: {
-      enabled: true,
-    },
-    navigation: {
-      nextEl: ".testimony-swiper-button-right",
-      prevEl: ".testimony-swiper-button-left",
-    },
-    on: {
-      init: function () {
-        updateSlideHeights(this);
-      },
-      slideChangeTransitionEnd: function () {
-        updateSlideHeights(this);
-      }
-    }
-  });
-
-  function updateSlideHeights(swiper) {
-    // Get the tallest slide height
-    let maxHeight = 0;
-    swiper.slides.forEach(slide => {
-      slide.style.height = 'auto'; // Reset height
-      maxHeight = Math.max(maxHeight, slide.offsetHeight);
-    });
-
-    // Apply the max height to all slides
-    swiper.slides.forEach(slide => {
-      slide.style.height = `${maxHeight}px`;
-    });
-  }
-
+  
+  
   // Initialize Swiper for testimony carousel
   const testimonySwiper = new Swiper("#testimony-carousel", {
     slidesPerView: 1.75,
@@ -78,4 +43,45 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
   });
+  
+
+  
+  // Initialize Swiper for image carousel
+  const imageCarouselSwiper = new Swiper("#service-carousel", {
+    slidesPerView: 1.1,
+    centeredSlides: true,
+    spaceBetween: 20,
+    loop: true,
+    keyboard: {
+      enabled: true,
+    },
+    navigation: {
+      nextEl: ".testimony-swiper-button-right",
+      prevEl: ".testimony-swiper-button-left",
+    },
+    on: {
+      init: function () {
+        updateSlideHeights(this);
+      },
+      slideChangeTransitionEnd: function () {
+        updateSlideHeights(this);
+      }
+    }
+  });
+
+  function updateSlideHeights(swiper) {
+    // Get the tallest slide height
+    let maxHeight = 0;
+    swiper.slides.forEach(slide => {
+      slide.style.height = 'auto'; // Reset height
+      maxHeight = Math.max(maxHeight, slide.offsetHeight);
+    });
+
+    // Apply the max height to all slides
+    swiper.slides.forEach(slide => {
+      slide.style.height = `${maxHeight}px`;
+    });
+  }
+
+  
 });
