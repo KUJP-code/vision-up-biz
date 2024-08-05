@@ -17,50 +17,59 @@
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 <body>
-  <!-- Navbar -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light navbar-custom">
-    <div class="container-fluid nav-inner">
-        <a class="navbar-brand m-plus-1p-extrabold" href="kids-iup.kp"><img src="./images/global-images/navlogo-black.svg" alt="Vision UP" class="navlogo d-inline-block align-text-top"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav me-auto">
-                <li class="nav-item">
-                    <a class="nav-link m-plus-1p-extrabold" href="#">ホーム</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link m-plus-1p-extrabold dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                   サービス
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link m-plus-1p-extrabold" href="#">について</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link m-plus-1p-extrabold" href="#">スタッフ</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link m-plus-1p-extrabold" href="#">ブログ</a>
-                </li>
-            </ul>
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link m-plus-1p-extrabold navlink-contact" href="#">お問い合わせ</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link m-plus-1p-extrabold navlink-language" href="#">ENG</a>
-              </li>
-            </ul>
-        </div>
+
+  
+
+
+<!-- Navbar -->
+<nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-light navbar-custom">
+  <div class="container-fluid nav-inner">
+    <a class="navbar-brand m-plus-1p-extrabold" href="kids-iup.kp">
+      <img src="./images/global-images/navlogo-black.svg" alt="Vision UP" class="navlogo d-inline-block align-text-top">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link m-plus-1p-extrabold" href="#">ホーム</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link m-plus-1p-extrabold dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            サービス
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link m-plus-1p-extrabold" href="#">について</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link m-plus-1p-extrabold" href="#">スタッフ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link m-plus-1p-extrabold" href="#">ブログ</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link m-plus-1p-extrabold navlink-contact" href="#">お問い合わせ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link m-plus-1p-extrabold navlink-language" href="#">JA</a>
+        </li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
+
+
+
 
   <!-- HERO -->
   <div class="home-hero-outer">
@@ -80,6 +89,14 @@
       </div>
     </div>
   </div>
+  
+  <div class="hero-textbox-mobile-outer d-md-none">
+    <div class="hero-textbox-mobile-inner">
+        <p class="hero-textbox-mobile-text">VISIONは子供向け英会話スクール運営を希望する企業に向けて、私たちが独自に築き上げてきたスクール運営のノウハウをオーダーメイド型で提供します。企画段階から開校日を迎えるまで、各ステップにおいて必要な手続きを手厚くサポートします。</p>
+        <button type="button" class="btn btn-lg btn-global hero-btn-1">お問い合わせ　<span class="btn-arrow-emphasis">→</span></button>
+      </div>
+    </div>
+
 
   <!-- SUB HERO -->
   <div class="home-hero-sub-outer">
@@ -109,7 +126,7 @@
       <p class="text-center">VISIONが提供するサービスは、英会話スクールの運営を成功させるため<br>
         3つの方向性からサポートいたします。</p>
     </div>
-    <div class="service-card-row">
+    <div class="d-none d-sm-block service-card-row">
       <div class="row">
         <div class="service-card-1">
           <img src="./images/card-img-1.webp" alt="service-card-1" class="img-fluid service-card-1-img">
@@ -159,9 +176,80 @@
         </div>
       </div>
     </div>
-  </div>
 
 
+    <div class="d-md-none swiper" id="image-carousel">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="service-card-1">
+            <img src="./images/card-img-1.webp" alt="service-card-1" class="img-fluid service-card-1-img">
+            <h3 class="text-black">事業計画</h3>
+            <div class="service-card-text-wrapper">
+              <p class="service-text">
+                ▪ ビジネスモデルの企画<br>
+                ▪ 顧客開拓の方法<br>
+                ▪ 出店エリアの調査と準備<br>
+                ▪ 出店に至るまでの行動計画
+              </p>
+              <div class="service-btn-wrapper">
+                <button type="button" class="btn btn-lg btn-global service-btn-1">さらに詳しく</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="service-card-2">
+            <img src="./images/card-img-2.webp" alt="service-card-2" class="img-fluid service-card-1-img">
+            <h3 class="text-white">カリキュラム</h3>
+            <div class="service-card-text-wrapper">
+              <p class="text-white service-text">
+                ▪ 効率的なカリキュラム骨格の構築<br>
+                ▪ 直感的に理解できる教育マニュアル<br>
+                ▪ 簡単に使用できるデジタルコンテンツを用意<br>
+                ▪ 保護者が使いやすいアプリサービス<br>
+              </p>
+            </div>
+            <div class="service-btn-wrapper">
+              <button type="button" class="btn btn-lg btn-global service-btn-2">さらに詳しく</button>
+              <button type="button" class="btn btn-lg btn-global service-btn-3">サンプル</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="service-card-1">
+            <img src="./images/card-img-3.webp" alt="service-card-1" class="img-fluid service-card-1-img">
+            <h3 class="text-black">スタッフのトレーニング</h3>
+            <div class="service-card-text-wrapper">
+              <p class="service-text">
+                ▪ 経営スタッフ(教室長)へのトレーニング<br>
+                ▪ 講師スタッフへのトレーニング<br>
+                ▪ サポートスタッフ(アルバイト)へのトレーニング<br>
+                ▪ 継続的な人材開発サポート<br>
+              </p>
+              <div class="service-btn-wrapper">
+                <button type="button" class="btn btn-lg btn-global service-btn-1">さらに詳しく</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="nav-arrows-wrapper d-flex align-items-center">
+        <img
+          src="./images/carousel-arrow-left.svg"
+          alt="arrow-left"
+          class="swiper-custom-nav-arrow testimony-swiper-button-left"
+        />
+        <img
+          src="./images/carousel-arrow-right.svg"
+          alt="arrow-right"
+          class="swiper-custom-nav-arrow testimony-swiper-button-right"
+        />
+      </div>
+    </div>
+    
+    
+</div>
     <!-- Call to Action -->
   <div class="call-to-action-outer d-flex justify-content-center align-items-center">
 
@@ -221,6 +309,10 @@
         
         </div>
       </div>
+
+
+      <!-- CLIENT TESTIMONY -->
+
 
       <h2 class="text-black home-h2 text-center h2-padding">OUR CLIENTS<span class="period-detail">.</span></h2>
     </div>
@@ -284,7 +376,7 @@
         <!-- End Slide 3 -->
       </div>
 
-      <div class="customer-testimony-arrows-wrapper d-flex align-items-center">
+      <div class="nav-arrows-wrapper d-flex align-items-center">
         <img
           src="./images/carousel-arrow-left.svg"
           alt="arrow-left"
