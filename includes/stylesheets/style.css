@@ -203,6 +203,19 @@ p{
     color: #00adcf;
   }
 
+
+
+.mask-lower{
+  width: 100%;
+  aspect-ratio: 655 / 18;
+  mask-composite: subtract;
+
+}
+
+
+
+
+
   @media (min-width: 0px) and (max-width: 575.98px) {
 .container{
   display: block;
@@ -496,6 +509,11 @@ p{
 
 
 /* ----------SECTION 2----------------- */
+
+.top-mask{
+  clip-path: ellipse(51% 3rem at 50% 0%);
+}
+
 .section-2-bg{
   background: rgb(252,180,75);
   background: linear-gradient(135deg, rgba(252,180,75,1) 0%, rgba(234,129,36,1) 100%);
