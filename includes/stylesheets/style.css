@@ -883,6 +883,13 @@ p{
 
   @media (min-width: 0px) and (max-width: 575.98px) {
 
+
+
+    .section-3-reassurance-img{
+      display: none;
+    }
+
+
     .section-3-wrapper{
       background-image: url(/images/section-3-mobile-bg.webp);
 
