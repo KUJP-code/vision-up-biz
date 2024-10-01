@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap 5 Starter Template</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="./includes/stylesheets/style.css">
+</head>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light navbar-custom">
+    <div class="container-fluid nav-inner">
+        <a class="navbar-brand m-plus-1p-extrabold" href="kids-iup.kp"><img src="/images/global-images/navlogo-black.svg" alt="Vision UP" class="navlogo d-inline-block align-text-top"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link m-plus-1p-extrabold" href="#">HOME</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link m-plus-1p-extrabold dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   SERVICES
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link m-plus-1p-extrabold" href="#">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link m-plus-1p-extrabold" href="#">STAFF</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link m-plus-1p-extrabold" href="#">BLOG</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link m-plus-1p-extrabold navlink-contact" href="#">CONTACT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link m-plus-1p-extrabold navlink-language" href="#">日本語</a>
+              </li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div class="home-hero-outer">
+    <div class="home-hero-inner">
+      <div class="row">
+        <div class="col-md-9 col-lg-11 col-xl-9 col-xxl-7">
+          <div class="hero-text-wrapper">
+            <h1 class="m-plus-1p-extrabold">ELEVATE ENGLISH<br>
+                LEARNING WITH<br>
+                <span class="word-highlight-blue m-plus-1p-extrabold">VISION</span> CONSULTING<span class="period-detail">.</span></h1>
+            <div class="hero-textbox">
+              <p>VISION specializes in personalized consulting, offering fully integrated, innovative and tailored solutions to help you launch or optimise your Enlish Language business.</p>
+              <button type="button" class="btn btn-lg btn-global hero-btn-1">GET IN TOUCH　<span class="btn-arrow-emphasis">→</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SUB HERO -->
+  <div class="home-hero-sub-outer">
+    <div class="home-hero-sub-inner">
+      <div class="row">
+        <div class="col-sm-4 col-md-5 col-lg-5 col-xl-6">
+          <div class="home-hero-sub-img-wrapper">
+            <div class="img-fluid sub-hero-img"></div>
+          </div>
+        </div>
+        <div class="col-sm-8 col-md-7 col-lg-7 col-xl-6">
+          <div class="sub-hero-text-wrapper">
+            <h2>ABOUT<span class="period-detail">.</span></h2>
+            <p class="p_alt">Our team of experts have over 20 years of combined experience in the field of private education. This knowledge has been invaluable in developing strategies for launching dozens of successful schools across the Kanto region and covers all levels of the procedure, from location planning, marketing strategies and operational planning to materials acquisition, curriculum development and staff training. Learn more about who we are, what we do and how we can help you launch your new business or improve your current operations.</p>
+            <button type="button" class="btn btn-lg btn-global hero-btn-2">NEW BUSINESS　<span class="btn-arrow-emphasis">→</span></button>
+            <button type="button" class="btn btn-lg btn-global hero-btn-3">BUSINESS OPTIMISATION　<span class="btn-arrow-emphasis">→</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="services-wrapper">
+    <div class="home-container">
+      <h2 class="text-black home-h2 h2-padding text-center">OUR SERVICES<span class="period-detail">.</span></h2>
+      <p class="text-center">Our services encompass the three main aspects of launching or improving English language business.</p>
+    </div>
+    <div class="service-card-row">
+      <div class="row">
+        <div class="service-card-1">
+          <img src="./images/card-img-1.webp" alt="service-card-1" class="img-fluid service-card-1-img">
+          <h3 class="text-black">EXPERTISE</h3>
+          <div class="service-card-text-wrapper">
+            <p class="service-text">
+              ▪　Business Model Strategies<br>
+              ▪　Customer Outreach<br>
+              ▪　Location Preparation<br>
+              ▪　Operations planning
+            </p>
+            <div class="service-btn-wrapper">
+              <button type="button" class="btn btn-lg btn-global service-btn-1">READ MORE</button>
+            </div>
+          </div>
+        </div>
+        <div class="service-card-2">
+          <img src="./images/card-img-2.webp" alt="service-card-2" class="img-fluid service-card-1-img">
+          <h3 class="text-white">CURRICULUM</h3>
+          <div class="service-card-text-wrapper">
+            <p class="text-white service-text">
+              ▪　Integrated curriculum framework<br>
+              ▪　Intuitive teaching rubric<br>
+              ▪　User friendly digital resources<br>
+              ▪　Customer oriented digital services<br>
+            </p>
+          </div>
+          <div class="service-btn-wrapper">
+            <button type="button" class="btn btn-lg btn-global service-btn-2">READ MORE</button>
+            <button type="button" class="btn btn-lg btn-global service-btn-3">SAMPLES</button>
+          </div>
+        </div>
+        <div class="service-card-1">
+          <img src="./images/card-img-3.webp" alt="service-card-1" class="img-fluid service-card-1-img">
+          <h3 class="text-black">STAFF TRAINING</h3>
+          <div class="service-card-text-wrapper">
+            <p class="service-text">
+              ▪　Management Staff Orientation<br>
+              ▪　Teaching Staff Orientation<br>
+              ▪　Support Staff Orientation<br>
+              ▪　Ongoing Development Support<br>
+            </p>
+            <div class="service-btn-wrapper">
+              <button type="button" class="btn btn-lg btn-global service-btn-1">READ MORE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- Call to Action -->
+  <div class="call-to-action-outer d-flex justify-content-center align-items-center">
+
+    <div>
+    <h2 class="cta-h2">SHARE OUR VISION</h2>
+
+    <h3 class="cta-h3">If you are interested in the opportunity to launch your own English Language business or improve your current busines, feel free to reach out to us for more information and an initial consultation.</h3>
+
+      <button type="button" class="btn btn-lg btn-global cta-btn">GET IN TOUCH　<span class="btn-arrow-emphasis">→</span></button>
+    </div>
+
+    
+  </div>
+
+
+      <!-- CASE STUDY -->
+
+      <div class="home-container">
+
+<div class="row">
+<div class="col-sm-6">
+  <div class="d-flex align-items-center">
+    <h2 class="text-black mb-0 h2-padding">SUCCESS STORY </h2> 
+    <h3 class="case-study-emphasis mb-0 ml-2">A CASE STUDY</h3>
+  </div>
+  <p>Since 2016, our experts have cultivated the success of Kids UP. From humble beginnings at a single location in Ota ku, Kids UP has expanded to over 34 locations across Tokyo, Kanagawa, Chiba and Saitama and now serve over 5,000 students across these areas, with a revenue of over xx yen each year. Learn more about our success and how our our expertise can reap similar results for you too.</p>
+  <button type="button" class="btn btn-lg btn-global btn-case-study">READ MORE　<span class="btn-arrow-emphasis">→</span></button>
+</div>
+
+
+      </div>
+      <h2 class="text-black home-h2 text-center h2-padding">DATA<span class="period-detail">.</span></h2>
+
+      <div class="row">
+        <div class="col-sm-4 data-col-1"><img src="./images/data-icon-1.svg" alt="data-icon-1" class="data-icon-1">
+        
+        <p class="data-text-1">SCHOOLS</p>
+        <p class="data-text-2">36+</p>
+        <p class="data-text-3">Locations</p>
+        
+        </div>
+
+
+
+
+        <div class="col-sm-4 data-col-2"><img src="./images/data-icon-2.svg" alt="data-icon-2" class="data-icon-2">
+        
+         <p class="data-text-1">INVESTMENT RECOVERY</p>
+        <p class="data-text-2">3 YEARS</p>
+        <p class="data-text-3">Time to profit.</p></div>
+        <div class="col-sm-4 data-col-3"><img src="./images/data-icon-3.svg" alt="data-icon-3" class="data-icon-3">
+        
+          <p class="data-text-1">REVENUE</p>
+          <p class="data-text-2">¥60万毎年</p>
+          <p class="data-text-3">Year on year revenue.</p>
+        
+        </div>
+      </div>
+
+      <h2 class="text-black home-h2 text-center h2-padding">OUR CLIENTS<span class="period-detail">.</span></h2>
+    </div>
+
+
+
+
+
+          <div class="swiper" id="image-carousel">
+
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+            <figure>
+              <div class="speech-bubble">
+                <p class="testimony-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ab laboriosam nostrum nam pariatur voluptatum ipsum molestiae, esse reiciendis saepe. Odio qui, inventore repellendus labore nulla ex nam, mollitia velit architecto repudiandae, eveniet earum magni eaque neque. Eaque vitae reprehenderit, cupiditate sunt veniam excepturi magnam consequatur corporis quod. Dicta, perspiciatis?</p>
+              </div>
+              <p class="testimony-name">Yukihiro Tanaka</p>
+              <p class="testimony-title">Marketing Director, ZenithTech Solutions</p>
+            </figure>
+            </div>
+            <!-- End Slide 1 -->
+      
+            <div class="swiper-slide swiper-slide-active">
+            <figure>
+            <div class="speech-bubble">
+              <p class="testimony-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ab laboriosam nostrum nam pariatur voluptatum ipsum molestiae, esse reiciendis saepe. Odio qui, inventore repellendus labore nulla ex nam, mollitia velit architecto repudiandae, eveniet earum magni eaque neque. Eaque vitae reprehenderit, cupiditate sunt veniam excepturi magnam consequatur corporis quod. Dicta, perspiciatis?</p>
+            </div>
+            <p class="testimony-name">Yukihiro Tanaka</p>
+            <p class="testimony-title">Marketing Director, ZenithTech Solutions</p>
+            </figure>
+            </div>
+            <!-- End Slide 2 -->
+      
+            <div class="swiper-slide">
+            <figure>
+            <div class="speech-bubble">
+              <p class="testimony-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ab laboriosam nostrum nam pariatur voluptatum ipsum molestiae, esse reiciendis saepe. Odio qui, inventore repellendus labore nulla ex nam, mollitia velit architecto repudiandae, eveniet earum magni eaque neque. Eaque vitae reprehenderit, cupiditate sunt veniam excepturi magnam consequatur corporis quod. Dicta, perspiciatis?</p>
+            </div>
+            </figure>
+            <p class="testimony-name">Yukihiro Tanaka</p>
+            <p class="testimony-title">Marketing Director, ZenithTech Solutions</p>
+            </div>
+            <!-- End Slide 3 -->
+      
+   
+      
+            
+          </div>
+          <!-- End Swiper Wrapper -->
+        </div>
+         
+          <div class="customer-testimony-arrows-wrapper d-flex align-items-center">
+            <img
+            src="./images/carousel-arrow-left.svg"
+            alt="arrow-left"
+            class="swiper-custom-nav-arrow testimony-swiper-button-left"
+            />
+            <img
+            src="./images/carousel-arrow-right.svg"
+            alt="arrow-right"
+            class="swiper-custom-nav-arrow testimony-swiper-button-right"
+            />
+          </div>
+      
+      
+      <!-- End point1 -->
+      
+      
+      <div class="call-to-action-outer d-flex justify-content-center align-items-center">
+
+        <div>
+        <h2 class="cta-h2">VISIONと一緒にはじめませんか？</h2>
+    
+        <h3 class="cta-h3">英会話スクール経営に興味のある方は<br>
+          お気軽にお問い合わせください。</h3>
+    
+          <button type="button" class="btn btn-lg btn-global cta-btn">資料請求・お問い合わせ　<span class="btn-arrow-emphasis">→</span></button>
+        </div>
+    
+        
+      </div>
+    
+      
+      <h2 class="text-black home-h2 text-center h2-padding">CHECK OUT OUR LATEST NEWS<span class="period-detail">.</span></h2>
+
+      <div class="home-container">
+
+        <h2 class="text-black home-h2 text-center h2-padding">FREQUENTLY ASKED QUESTIONS<span class="period-detail">.</span></h2>
+
+        <div class="accordion" id="faqAccordion">
+          <!-- Item 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+         
+                無料体験、見学はできますか？
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                <p>
+                  無料体験レッスンや説明会を随時行っております。
+                  日程が合わない方には個別面談対応も行っておりますのでお気軽にお問い合わせください。
+                  幼児のお子様・人見知りが強いお子様は、平日18時以降、または土曜日開催の少人数開催の体験会参加をお勧めします。
+                </p>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Item 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+         
+                授業はすべて英語で行いますか？
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                <p>
+                  レッスン中の会話は基本的にすべて英語で行います。
+                  もちろん、お子さまのコミュニケーションスキルや成長に合わせて段階的に英語が身につく環境になっていますので、
+                  ご安心ください。
+                </p>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Item 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+         
+                送迎サービスはありますか？
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                <p>
+                  指定の小学校・保育園までのお迎えと、 ご自宅付近の停車場所までお送りする「無料送迎サービス」がございます。<br>
+                  ※レギュラーコースにご通学の方のみご利用いただけます。サマースクールのみご参加の方には対応いたしておりません。
+                </p>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Item 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+         
+                何時まで預かっていただけますか？
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFour"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                <p>
+                  最長20:30までお預かりが可能です。30分単位で延長料金が発生いたします。
+                </p>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Item 5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+         
+                普段、どんなレッスンを行ってますか？
+              </button>
+            </h2>
+            <div
+              id="collapseFive"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFive"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                <p>
+                  多彩なプログラムを通して、楽しみながら英語を学んでいただきます。
+                  例えば、スポーツやクラフト、その他にも学校で学んでいる算数や理科、社会なども英語で学んでいただきます。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+
+        
+        <!-- FOOTER -->
+
+<div class="footer-top"></div>
+<div class="footer-wrapper">
+  <div class="footer-container">
+
+    <div class="row mb-4 align-items-center">
+      <div class="col-sm-6">
+        <h2 class="footer-strapline">LET'S BUILD YOUR VISION<span class="period-detail">.</span></h2>
+      </div>
+      <div class="col-sm-6 d-flex justify-content-end">
+        <button type="button" class="btn btn-lg btn-global footer-btn">CONTACT <span class="btn-arrow-emphasis">→</span></button>
+      </div>
+    </div>
+
+    <div class="footer-lower">
+      <div class="row">
+        <div class="col-sm-6">
+          <img src="./images/footer-logo.svg" alt="Vision UP" class="footer-logo mb-2">
+          <p class="footer-copyright mb-0">Copyright © 2024 Vision UP</p>
+        </div>
+        <div class="col-sm-6 d-flex flex-column align-items-end">
+          <ul class="footer-nav list-unstyled d-flex mb-0">
+            <li class="footer-item me-3">
+              <a class="footer-link m-plus-1p-extrabold" href="#">HOME</a>
+            </li>
+            <li class="footer-item me-3">
+              <a class="footer-link m-plus-1p-extrabold" href="#">SERVICES</a>
+            </li>
+            <li class="footer-item me-3">
+              <a class="footer-link m-plus-1p-extrabold" href="#">ABOUT</a>
+            </li>
+            <li class="footer-item me-3">
+              <a class="footer-link m-plus-1p-extrabold" href="#">STAFF</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link m-plus-1p-extrabold" href="#">BLOG</a>
+            </li>
+          </ul>
+          <div class="footer-sns-wrapper mt-3">
+            <a href=""><img src="./images/sns-facebook.svg" class="footer-sns" alt="Facebook"></a>
+            <a href=""><img src="./images/sns-x.svg" class="footer-sns" alt="X"></a>
+            <a href=""><img src="./images/sns-instagram.svg" class="footer-sns" alt="Instagram"></a>
+          </div>
+        </div>
+      </div>
+      
+  </div>
+
+  </div>
+</div>
+
+    
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eOMkqCFLzz67mbo5Ix9kg19Ajo6V6hKlnm+aNI9kYd8/Gy7rwyN4Ukf9N8FnC1F4" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-...A4GCW" crossorigin="anonymous"></script>
+<script src="javascript.js"></script>
+</body>
+</html>
