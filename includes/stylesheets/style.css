@@ -1399,6 +1399,10 @@ padding-right: 3rem;
   border-color: #00adcf;
 }
 
+.confirmation{
+  min-height: 60vh;
+}
+
 @media (min-width: 0px) and (max-width: 575.98px) {
 
   .form-row{
@@ -1431,3 +1435,4 @@ padding-right: 3rem;
 =======
 }
 >>>>>>> main
+
