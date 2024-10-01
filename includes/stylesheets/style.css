@@ -1318,45 +1318,78 @@ padding-top: 1rem;
 
 /* ----------FOOTER----------------- */
 
+.form-row{
+  padding-top: 2rem;
+}
+
+.form-col{
+  background-color: #f3f3f3;
+  padding: 2rem;
+  border-radius: 2rem;
+  margin-right: .5%;
+  width: 49.5%;
+}
+
+.form-row-picture{
+  padding: 2rem;
+  border-radius: 2rem;
+  background-image: url(/images/contact-bg.webp);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: .5%;
+  width: 49.5%;
+}
 
 .form-wrapper{
   width: fit-content;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 80%;
+
 }
 
 .form-label{
   font-size: 1.2rem;
   padding-top: 2rem;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20%;
   margin-bottom: -1rem;
+  font-weight: normal;
 
 }
 
 .form-input{
-  width: 60%;
+  box-shadow: none !important;
+  border-style: solid !important;
+  border-color: #DDDDDD ;
+  width: 100%;
   display: block;
-  margin-left: auto;
   margin-right: auto;
-  line-height: 1.25rem;
+  line-height: 1.5rem;
   padding: .25rem;
+  border-radius: .25rem;
 
 }
 
+.form-mandatory-txt{
+  font-size: .8rem;
+  color:  #949494 ;
+  margin-top: -1rem;
+}
+
 .form-btn{
-background-color: #00adcf;
-color: white;
-border-color: #00adcf;
+background-color: #ffffff00;
+color: rgb(0, 0, 0);
+border-color: #000000;
 transition: ease-in-out .3s;
-margin-left: 20%;
-margin-top: 1rem;
-padding-left: 4rem;
-padding-right: 4rem;
+text-align: center;
+display: block;
+margin-left: auto;
+margin-right: auto;
+
+padding-left: 3rem;
+padding-right: 3rem;
 
 }
 
@@ -1367,6 +1400,14 @@ padding-right: 4rem;
 }
 
 @media (min-width: 0px) and (max-width: 575.98px) {
+
+  .form-row{
+    padding-top: 1rem;
+  }
+
+  .form-col{
+    width: 100%;
+  }
 
   .form-wrapper{
     width: 90%;
@@ -1381,8 +1422,12 @@ padding-right: 4rem;
  padding-left: 0%;
   }
 
+<<<<<<< HEAD
   .form-btn{
     margin-left: 0%;
   }
+}
+>>>>>>> main
+=======
 }
 >>>>>>> main

@@ -19,7 +19,7 @@
 
   
 
-<body>
+<body style="background-color: whitez;">
 <!-- Navbar -->
 <nav id="navbar" class="navbar fixed-top">
   <div class="container-fluid nav-inner">
@@ -72,36 +72,51 @@
 
 <div class="container" style="padding-top: 5rem;">
   
-  <div class="form-wrapper">
-  <form action="https://vision-up.app/inquiries" method="post" class="form-general">
+<div class="row form-row">
 
-    
-  <div class="form-group">
-    <label for="inquiry_email" class="form-label">メールアドレス</label><br>
-    <input type="email" name="inquiry[email]" id="inquiry_email" required class="form-input"/>
+<div class="col-sm-6 form-col">
+
+  <div class="form-wrapper">
+    <h2 style="color: black;">CONTACT<span class="period-detail">.</span></h2>
+
+
+    <form action="https://vision-up.app/inquiries" method="post" class="form-general">
+  
+      
+    <div class="form-group">
+      <div class="form-group">
+        <label for="inquiry_name" class="form-label">お名前<span class="period-detail">*</span></label><br>
+        <input type="text" name="inquiry[name]" id="inquiry_name" required class="form-input"/>
+      </div>
+
+      <label for="inquiry_email" class="form-label">メールアドレス<span class="period-detail">*</span></label><br>
+      <input type="email" name="inquiry[email]" id="inquiry_email" required class="form-input"/>
+    </div>
+    <div class="form-group">
+      <label for="inquiry_phone" class="form-label">電話番号</label><br>
+      <input type="text" name="inquiry[phone]" id="inquiry_phone" class="form-input"/>
+    </div>
+    <div class="form-group">
+      <label for="inquiry_message" class="form-label">メッセージ</label><br>
+      <textarea
+        name="inquiry[message]"
+        id="inquiry_message"
+        rows="8"
+        class="form-input"
+        required
+      ></textarea>
+    </div>
+    <p class="form-mandatory-txt"><span class="period-detail">*</span>必須項目</p>
+    <input type="submit" value="送る" aria-label="Submit" class="btn-global form-btn" />
+  </form>
+ 
   </div>
-  <div class="form-group">
-    <label for="inquiry_phone" class="form-label">電話番号</label><br>
-    <input type="text" name="inquiry[phone]" id="inquiry_phone" class="form-input"/>
-  </div>
-  <div class="form-group">
-    <label for="inquiry_name" class="form-label">お名前</label><br>
-    <input type="text" name="inquiry[name]" id="inquiry_name" required class="form-input"/>
-  </div>
-  <div class="form-group">
-    <label for="inquiry_message" class="form-label">メッセージ</label><br>
-    <textarea
-      name="inquiry[message]"
-      id="inquiry_message"
-      rows="5"
-      class="form-input"
-      required
-    ></textarea>
-  </div>
-  <input type="submit" value="送る" aria-label="Submit" class="btn-global form-btn" />
-</form>
+  
 </div>
 
+<div class="d-none d-sm-block col-sm-6  form-row-picture "></div>
+
+</div>
 
 </div>
 
