@@ -924,7 +924,7 @@ h3 {
   position: absolute;
   left: 50%;
   transform: translate(0%, -100%);
-  width: 80%;
+  width: 50%;
   top: calc(100% + 4rem);
   max-width: 100rem;
   overflow-x: hidden;
@@ -1107,7 +1107,7 @@ h3 {
 
 .footer-wrapper {
   margin-top: -1px;
-  background-color: #ffffff;
+
   overflow-x: hidden;
 }
 
@@ -1144,13 +1144,17 @@ h3 {
   margin-top: 4rem;
   border-top: 2px solid rgb(0, 0, 0);
 }
+.footer-lower-wrapper{
+  margin-top: 1rem;
+}
 
 .footer-logo {
   width: 20rem;
-  padding: 2rem 0;
+
   display: block;
   margin-left: auto;
   margin-right: auto;
+  
 }
 
 .footer-copyright {
@@ -1158,8 +1162,23 @@ h3 {
   line-height: 1;
   padding-bottom: 4rem;
   text-align: center;
+  width: auto;
+  display: flex;
+  justify-content: center;  /* Centers content horizontally */
+  align-items: center;      /* Centers content vertically */
+  height: 100%;             /* Ensure the height is inherited or set */
+  
 }
 
+<<<<<<< HEAD
+=======
+.footer-copyright-wrapper{
+
+  height: 100%;             /* Ensure the height is inherited or set */
+}
+
+
+>>>>>>> main
 .footer-sns-wrapper {
   display: flex;
   gap: 0.66rem;
@@ -1183,11 +1202,14 @@ h3 {
   transition: 0.3s;
 }
 
+
+
 @media (min-width: 0px) and (max-width: 575.98px) {
   .footer-strapline {
     font-size: 2rem;
     text-align: center;
   }
+<<<<<<< HEAD
 
   .footer-copyright {
     font-size: 2.5vw;
@@ -1236,3 +1258,132 @@ h3 {
     padding-top: 0rem;
   }
 }
+=======
+  
+.footer-copyright{
+  font-size: 3vw;
+  margin-top: 0rem;
+  padding-bottom: 1rem;
+    width: auto;
+  display: flex;
+  justify-content: center;  /* Centers content horizontally */
+  align-items: center;      /* Centers content vertically */
+  height: 100%;             /* Ensure the height is inherited or set */
+}
+
+.footer-btn {
+padding-left: 2rem;
+padding-right: 2rem;
+width: 90%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 2rem;
+margin-bottom: 0rem;
+}
+
+.footer-lower{
+  margin-bottom: 2rem
+  ;
+}
+
+
+
+.footer-sns-wrapper {
+  width: 100%;
+  display: flex;
+  gap: .2rem; /* Adjust the spacing between icons as needed */
+  justify-content: center; /* Center the icons horizontally within the parent */
+  align-items: center; /* Center the icons vertically within the parent */
+  padding-top: 0rem !important;
+  margin-top: -0.1rem !important
+  ;
+}
+
+.footer-logo {
+  width: 90%;
+  padding: 0rem;
+padding-top: 1rem;
+}
+
+
+.footer-sns {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  padding-top: 0rem;
+}
+}
+
+
+/* ----------FOOTER----------------- */
+
+
+.form-wrapper{
+  width: fit-content;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.form-label{
+  font-size: 1.2rem;
+  padding-top: 2rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20%;
+  margin-bottom: -1rem;
+
+}
+
+.form-input{
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.25rem;
+  padding: .25rem;
+
+}
+
+.form-btn{
+background-color: #00adcf;
+color: white;
+border-color: #00adcf;
+transition: ease-in-out .3s;
+margin-left: 20%;
+margin-top: 1rem;
+padding-left: 4rem;
+padding-right: 4rem;
+
+}
+
+.form-btn:hover{
+  background-color: white;
+  color: #00adcf;
+  border-color: #00adcf;
+}
+
+@media (min-width: 0px) and (max-width: 575.98px) {
+
+  .form-wrapper{
+    width: 90%;
+  }
+
+
+  .form-input{
+    width: 100%;
+  }
+
+  .form-label{
+ padding-left: 0%;
+  }
+
+  .form-btn{
+    margin-left: 0%;
+  }
+}
+>>>>>>> main
