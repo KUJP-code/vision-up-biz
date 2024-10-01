@@ -84,20 +84,25 @@
   
       
     <div class="form-group">
-      <div class="form-group">
-        <label for="inquiry_name" class="form-label">お名前<span class="period-detail">*</span></label><br>
+        <label for="inquiry_name" class="form-label">担当者名<span class="period-detail">*</span></label><br>
         <input type="text" name="inquiry[name]" id="inquiry_name" required class="form-input"/>
       </div>
 
+
+      <div class="form-group">
+        <label for="inquiry_phone" class="form-label">電話番号</label><br>
+        <input type="text" name="inquiry[phone]" id="inquiry_phone" required class="form-input"/>
+      </div>
+
+
+      <div class="form-group">
       <label for="inquiry_email" class="form-label">メールアドレス<span class="period-detail">*</span></label><br>
       <input type="email" name="inquiry[email]" id="inquiry_email" required class="form-input"/>
     </div>
+
+
     <div class="form-group">
-      <label for="inquiry_phone" class="form-label">電話番号</label><br>
-      <input type="text" name="inquiry[phone]" id="inquiry_phone" class="form-input"/>
-    </div>
-    <div class="form-group">
-      <label for="inquiry_message" class="form-label">メッセージ</label><br>
+      <label for="inquiry_message" class="form-label">お問い合わせ内容</label><br>
       <textarea
         name="inquiry[message]"
         id="inquiry_message"
@@ -106,7 +111,11 @@
         required
       ></textarea>
     </div>
+
+
     <p class="form-mandatory-txt"><span class="period-detail">*</span>必須項目</p>
+
+
     <input type="submit" value="送る" aria-label="Submit" class="btn-global form-btn" />
   </form>
  
