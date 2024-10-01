@@ -1170,15 +1170,11 @@ h3 {
   
 }
 
-<<<<<<< HEAD
-=======
 .footer-copyright-wrapper{
-
   height: 100%;             /* Ensure the height is inherited or set */
 }
 
 
->>>>>>> main
 .footer-sns-wrapper {
   display: flex;
   gap: 0.66rem;
@@ -1426,13 +1422,9 @@ padding-right: 3rem;
  padding-left: 0%;
   }
 
-<<<<<<< HEAD
+
   .form-btn{
     margin-left: 0%;
   }
 }
->>>>>>> main
-=======
-}
->>>>>>> main
 
