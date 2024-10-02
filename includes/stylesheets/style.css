@@ -1170,15 +1170,11 @@ h3 {
   
 }
 
-<<<<<<< HEAD
-=======
 .footer-copyright-wrapper{
-
   height: 100%;             /* Ensure the height is inherited or set */
 }
 
 
->>>>>>> main
 .footer-sns-wrapper {
   display: flex;
   gap: 0.66rem;
@@ -1399,6 +1395,19 @@ padding-right: 3rem;
   border-color: #00adcf;
 }
 
+.confirmation-wrapper{
+  height: 60vh;
+}
+
+
+.confirmation{
+  margin: 0;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 @media (min-width: 0px) and (max-width: 575.98px) {
 
   .form-row{
@@ -1422,12 +1431,9 @@ padding-right: 3rem;
  padding-left: 0%;
   }
 
-<<<<<<< HEAD
+
   .form-btn{
     margin-left: 0%;
   }
 }
->>>>>>> main
-=======
-}
->>>>>>> main
+
