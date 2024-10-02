@@ -84,6 +84,12 @@
     <form action="https://vision-up.app/inquiries" method="post" class="form-general">
   
       
+      <div class="form-group">
+        <label for="inquiry_name" class="form-label">会社名</label><br>
+        <input type="text" name="inquiry[org]" id="inquiry_org" class="form-input"/>
+      </div>
+
+
     <div class="form-group">
         <label for="inquiry_name" class="form-label">担当者名<span class="period-detail">*</span></label><br>
         <input type="text" name="inquiry[name]" id="inquiry_name" required class="form-input"/>
@@ -103,7 +109,7 @@
 
 
     <div class="form-group">
-      <label for="inquiry_message" class="form-label">お問い合わせ内容</label><br>
+      <label for="inquiry_message" class="form-label">お問い合わせ内容<span class="period-detail">*</span></label><br>
       <textarea
         name="inquiry[message]"
         id="inquiry_message"
