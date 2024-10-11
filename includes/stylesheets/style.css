@@ -703,6 +703,10 @@ h3 {
   padding-bottom: 5rem;
 }
 
+.section-1-graph-row{
+  padding-top: 2rem;
+}
+
 /* ----------SECTION 2----------------- */
 
 .section-2-bg {
@@ -1016,7 +1020,7 @@ h3 {
 .section-5-wrapper {
   background-color: #00adcf;
   padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-bottom: 6rem;
   overflow-x: hidden;
 }
 
