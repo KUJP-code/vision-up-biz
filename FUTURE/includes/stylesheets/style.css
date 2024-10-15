@@ -219,10 +219,10 @@ p{
     background-color: transparent;
     box-shadow: none;
 }
-.navbar-custom.scrolled {
-  width: 100% !important;
-    background-color: white !important;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.navbar.scrolled {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  background-color: #5f5ba8;
+  transition: 0.3s ease-in-out;
 }
 
 .navbar {
@@ -261,9 +261,9 @@ p{
     background-color: #00adcf;
     color: #fff !important;
     border-style: solid;
-    border-width: 0.125rem;
+    border-width: 0.25rem;
     border-color: #00adcf;
-    border-radius: 0px 0.3125rem 0.3125rem 0px;
+    border-radius: 0px 0.25rem 0.25rem 0px;
     margin-left: 0px !important;
     margin-right: 0.3125rem !important;
     padding-left: 0.75rem !important;
@@ -275,9 +275,9 @@ p{
     background-color: white;
     color: #191919;
     border-style: solid;
-    border-width: 0.125rem;
+    border-width: 0.25rem;
     border-color: white;
-    border-radius: 0.3125rem 0px 0px 0.3125rem;
+    border-radius: 0.25rem 0px 0px 0.25rem;
     margin-left: 0.3125rem !important;
     margin-right: 0px !important;
     padding-left: 0.75rem !important;

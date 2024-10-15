@@ -1,5 +1,44 @@
 document.addEventListener("DOMContentLoaded", function () {
   
+  // Remove Box Shadow on Scroll
+document.addEventListener("DOMContentLoaded", function () {
+  const nav = document.getElementById("navbar");
+  const toggler = document.querySelector(".navbar-toggler");
+
+  // Function to update navbar style
+  function updateNavbarStyle() {
+    if (!toggler.classList.contains("collapsed")) {
+      // If hamburger menu is open, make navbar solid
+      nav.classList.add("scrolled");
+    } else {
+      // If hamburger menu is closed
+      if (window.scrollY === 0) {
+        // If page is at top, make navbar transparent
+        nav.classList.remove("scrolled");
+      } else {
+        // If page is scrolled down, make navbar solid
+        nav.classList.add("scrolled");
+      }
+    }
+  }
+
+  // Initial update
+  updateNavbarStyle();
+
+  // Listen for scroll event
+  window.addEventListener("scroll", function () {
+    if (!toggler.classList.contains("collapsed")) {
+      // If hamburger menu is open, do not update navbar style
+      return;
+    }
+    updateNavbarStyle();
+  });
+
+  // Listen for toggle button click event
+  toggler.addEventListener("click", updateNavbarStyle);
+});
+  
+  
   
   // Initialize Swiper for testimony carousel
   const testimonySwiper = new Swiper("#testimony-carousel", {
