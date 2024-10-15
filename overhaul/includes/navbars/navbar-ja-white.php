@@ -1,7 +1,7 @@
 <nav id="navbar" class="fixed-top navbar-expand-lg navbar-light navbar">
   <div class="container-fluid nav-inner">
     <a class="navbar-brand m-plus-1p-extrabold" href="kids-iup.kp">
-      <img src="./images/global-images/navlogo-black.svg" alt="Vision UP" class="navlogo d-inline-block align-text-top">
+      <img src="../images/global/navlogo.svg" alt="Vision UP" class="navlogo d-inline-block align-text-top">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>

@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
@@ -12,6 +11,6 @@
 
 
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-  <link rel="stylesheet" href="./includes/stylesheets/style.css">
+  <link rel="stylesheet" href="../stylesheets/global-style.css">
 </head>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

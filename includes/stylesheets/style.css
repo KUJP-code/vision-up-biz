@@ -309,7 +309,7 @@ h3 {
 
 .curved-mask {
   width: 100%;
-  mask-image: url("/images/mask-upper.svg"),
+  mask-image: url("/images/mask-lower.svg"),
     linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)),
     url("/images/mask-lower.svg");
   mask-size:
