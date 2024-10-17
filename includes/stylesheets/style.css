@@ -802,6 +802,13 @@ h3 {
   padding-bottom: 2rem;
 }
 
+.section-2-graph-schools{
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media (min-width: 0px) and (max-width: 575.98px) {
   .section-2-bg {
     background:
