@@ -1006,6 +1006,13 @@ h3 {
   padding-bottom: 1rem;
 }
 
+
+.services-h3{
+  text-align: left;
+  color: #00adcf;
+  font-size: 1.25rem;
+  padding-top: 1.25rem;
+}
 /* ----------SECTION 5----------------- */
 
 .section-5-top {
