@@ -1053,7 +1053,8 @@ h3 {
 
 .section-5-text {
   position: relative;
-  text-align: center;
+  text-align: left;
+  margin-left: 22.5%;
   font-size: 1.1rem;
   z-index: 2px;
   padding-left: 0.5rem;
@@ -1332,7 +1333,7 @@ padding-top: 1rem;
   padding-right: .5rem;
   padding-top: 0rem;
 }
-}
+
 
 
 /* ----------FOOTER----------------- */
