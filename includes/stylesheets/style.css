@@ -550,7 +550,7 @@ h3 {
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
-  aspect-ratio: 1919 / 920;
+  aspect-ratio: 1919 / 890;
 }
 
 .home-hero-inner {
@@ -581,7 +581,7 @@ h3 {
 @media (min-width: 0px) and (max-width: 575.98px) {
   .home-hero-outer {
     aspect-ratio: 578 / 389;
-    background-size: cov;
+    background-size: cover;
     background-image: url(/images/holding-hero-bg-mobile.webp);
   }
 
@@ -616,7 +616,7 @@ h3 {
 
 .hero-sub-h2 {
   color: white;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
   font-family: "M PLUS 1p", sans-serif;
 }
