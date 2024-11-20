@@ -1009,7 +1009,7 @@ font-style: normal;
 
 
 .accordion-button:not(.collapsed) {
-  background-color: #ffffff; /* White background when expanded */
+  background-color: #ff0000; /* White background when expanded */
   color: #63574a; /* Keep text color unchanged */
   border-radius: 2rem 2rem 0rem 0rem; /* Rounded top edges when expanded */
 }
