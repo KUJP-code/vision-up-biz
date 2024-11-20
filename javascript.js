@@ -1,90 +1,76 @@
 
-const currentYear = new Date().getFullYear();
-document.querySelector('.footer-copyright').innerHTML = `Copyright © ${currentYear} Vision UP Powered by Kids UP`;
-
-
-
 
   
-  // Initialize Swiper for testimony carousel
-  const testimonySwiper = new Swiper("#testimony-carousel", {
-    slidesPerView: 1.75,
-    centeredSlides: true,
-    spaceBetween: 20,
-    loop: true,
-    keyboard: {
-      enabled: true,
+ // Initialize Swiper for testimony carousel
+const testimonySwiper = new Swiper("#testimony-carousel", {
+  slidesPerView: 1.75,
+  centeredSlides: true,
+  spaceBetween: 20,
+  loop: true,
+  keyboard: {
+    enabled: true,
+  },
+  navigation: {
+    nextEl: ".testimony-swiper-button-right",
+    prevEl: ".testimony-swiper-button-left",
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 1.5,
     },
-    navigation: {
-      nextEl: ".testimony-swiper-button-right",
-      prevEl: ".testimony-swiper-button-left",
+    768: {
+      slidesPerView: 1.75,
     },
-    on: {
-      init: function () {
-        const initialActiveSlide = document.querySelector('.swiper-slide-active');
-        if (initialActiveSlide) {
-          initialActiveSlide.querySelector('.speech-bubble').classList.add('active');
-          initialActiveSlide.querySelector('.testimony-text').classList.add('active');
-          initialActiveSlide.querySelector('.testimony-name').classList.add('active');
-          initialActiveSlide.querySelector('.testimony-title').classList.add('active');
-        }
-      },
-      slideChangeTransitionStart: function () {
-        document.querySelectorAll('.swiper-slide').forEach(slide => {
-          slide.querySelector('.speech-bubble').classList.remove('active');
-          slide.querySelector('.testimony-text').classList.remove('active');
-          slide.querySelector('.testimony-name').classList.remove('active');
-          slide.querySelector('.testimony-title').classList.remove('active');
-        });
-      },
-      slideChangeTransitionEnd: function () {
-        const activeSlide = document.querySelector('.swiper-slide-active');
-        if (activeSlide) {
-          activeSlide.querySelector('.speech-bubble').classList.add('active');
-          activeSlide.querySelector('.testimony-text').classList.add('active');
-          activeSlide.querySelector('.testimony-name').classList.add('active');
-          activeSlide.querySelector('.testimony-title').classList.add('active');
-        }
-      }
-    }
-  });
-  
-
-  
-  // Initialize Swiper for image carousel
-  const imageCarouselSwiper = new Swiper("#service-carousel", {
-    slidesPerView: 1.1,
-    centeredSlides: true,
-    spaceBetween: 20,
-    loop: true,
-    keyboard: {
-      enabled: true,
+  },
+  on: {
+    init: function () {
+      // Ensure active classes are managed dynamically after initialization
+      this.emit('slideChangeTransitionEnd');
     },
-    navigation: {
-      nextEl: ".testimony-swiper-button-right",
-      prevEl: ".testimony-swiper-button-left",
+    slideChangeTransitionStart: function () {
+      // Clear all active classes before the slide changes
+      this.slides.forEach(slide => {
+        clearActiveClasses(slide);
+      });
     },
-    on: {
-      init: function () {
-        updateSlideHeights(this);
-      },
-      slideChangeTransitionEnd: function () {
-        updateSlideHeights(this);
-      }
-    }
-  });
+    slideChangeTransitionEnd: function () {
+      // Apply active classes to the new active slide
+      applyActiveClasses(this.slides[this.activeIndex]);
+    },
+    activeIndexChange: function () {
+      // Handle changes to the active index (e.g., during dragging)
+      this.slides.forEach(slide => {
+        clearActiveClasses(slide);
+      });
+      applyActiveClasses(this.slides[this.activeIndex]);
+    },
+  },
+});
 
-  function updateSlideHeights(swiper) {
-    // Get the tallest slide height
-    let maxHeight = 0;
-    swiper.slides.forEach(slide => {
-      slide.style.height = 'auto'; // Reset height
-      maxHeight = Math.max(maxHeight, slide.offsetHeight);
-    });
+// Utility function to apply active classes
+function applyActiveClasses(slide) {
+  if (!slide) return;
+  const speechBubble = slide.querySelector('.speech-bubble');
+  const text = slide.querySelector('.testimony-text');
+  const name = slide.querySelector('.testimony-name');
+  const title = slide.querySelector('.testimony-title');
 
-    // Apply the max height to all slides
-    swiper.slides.forEach(slide => {
-      slide.style.height = `${maxHeight}px`;
-    });
-  }
+  if (speechBubble) speechBubble.classList.add('active');
+  if (text) text.classList.add('active');
+  if (name) name.classList.add('active');
+  if (title) title.classList.add('active');
+}
 
+// Utility function to clear active classes
+function clearActiveClasses(slide) {
+  if (!slide) return;
+  const speechBubble = slide.querySelector('.speech-bubble');
+  const text = slide.querySelector('.testimony-text');
+  const name = slide.querySelector('.testimony-name');
+  const title = slide.querySelector('.testimony-title');
+
+  if (speechBubble) speechBubble.classList.remove('active');
+  if (text) text.classList.remove('active');
+  if (name) name.classList.remove('active');
+  if (title) title.classList.remove('active');
+}

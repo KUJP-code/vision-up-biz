@@ -1,6 +1,6 @@
 <div class="service-card-2">
           <img src="includes/images/home/card-img-2.webp" alt="service-card-2" class="img-fluid service-card-1-img">
-          <h3 class="text-white service-h3">カリキュラム</h3>
+          <h3 class="text-white service-h3">各種教育ツール</h3>
           <div class="service-card-text-wrapper">
             <p class="text-white service-text">
               ▪　効率的なカリキュラム骨格の構築<br>

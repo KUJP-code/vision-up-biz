@@ -23,7 +23,7 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link m-plus-1p-extrabold" href="#">について</a>
+          <a class="nav-link m-plus-1p-extrabold" href="#">会社概要</a>
         </li>
         <li class="nav-item">
           <a class="nav-link m-plus-1p-extrabold" href="#">スタッフ</a>

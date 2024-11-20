@@ -47,7 +47,7 @@ body{
 }
 
 p{ 
-    line-height: 1.5;
+    line-height: 2;
     font-weight: normal;
 	  text-align: left;
     font-family: "M PLUS 1p", sans-serif;
@@ -131,7 +131,7 @@ p{
 
   h3{
     font-size: 2rem;
-    line-height: 1.5;
+    line-height: 2;
     font-family: "M PLUS 1p", sans-serif;
     text-align: center;
 
@@ -1009,7 +1009,7 @@ font-style: normal;
 
 
 .accordion-button:not(.collapsed) {
-  background-color: #ffffff; /* White background when expanded */
+  background-color: #ff0000; /* White background when expanded */
   color: #63574a; /* Keep text color unchanged */
   border-radius: 2rem 2rem 0rem 0rem; /* Rounded top edges when expanded */
 }

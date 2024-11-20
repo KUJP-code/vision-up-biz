@@ -1,6 +1,6 @@
 <div class="service-card-1">
           <img src="includes/images/home/card-img-3.webp" alt="service-card-1" class="img-fluid service-card-1-img">
-          <h3 class="text-black service-h3">スタッフのトレーニング</h3>
+          <h3 class="text-black service-h3">スタッフトレーニング</h3>
           <div class="service-card-text-wrapper">
             <p class="service-text">
               ▪　経営スタッフ(教室長)へのトレーニング<br>

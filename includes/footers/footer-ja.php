@@ -17,9 +17,17 @@
       <div class="row">
         <div class="col-sm-6">
           <img src="/includes/images/global/footer-logo.svg" alt="Vision UP" class="footer-logo mb-2">
-          <p class="footer-copyright mb-0">Copyright © 2024 Vision UP</p>
+          <p class="footer-copyright mb-0">Copyright © <span id="current-year"></span> Vision UP Powered by Kids UP</p>
+
         </div>
-        <div class="col-sm-6 footer-menu-col">
+
+
+        
+
+
+      
+
+        <div class="col-sm-6">
 
 
           <ul class="footer-nav list-unstyled d-flex mb-0 footer-menu-wrapper">
@@ -31,7 +39,7 @@
       
             </li>
             <li class="footer-item me-3">
-              <a class="footer-link m-plus-1p-extrabold" href="#">について</a>
+              <a class="footer-link m-plus-1p-extrabold" href="#">会社概要</a>
             </li>
             <li class="footer-item me-3">
               <a class="footer-link m-plus-1p-extrabold" href="#">スタッフ</a>
@@ -41,7 +49,27 @@
             </li>
           </ul>
 
-
+          <div class="row footer-address-row">
+            <div class="address-col-1">
+              <p class="footer-address">
+                ▼親会社<br>
+                〒120-0034<br>
+                東京都足立区千住1-4-1<br>
+                東京芸術センター11F<br>
+                株式会社P-UP World
+              </p>
+            </div>
+          
+            <div class="address-col-2">
+              <p class="footer-address">
+                ▼子会社<br>
+                〒102-0085<br>
+                東京都千代田区六番町10-2<br>
+                六番町市川ビル1階<br>
+                株式会社Kids-UP
+              </p>
+            </div>
+          </div>
 
           <div class="footer-sns-wrapper mt-3">
             
@@ -65,5 +93,8 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eOMkqCFLzz67mbo5Ix9kg19Ajo6V6hKlnm+aNI9kYd8/Gy7rwyN4Ukf9N8FnC1F4" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-...A4GCW" crossorigin="anonymous"></script>
 <script src="javascript.js"></script>
-</body>
-</html>
+
+
+<script>
+  document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
