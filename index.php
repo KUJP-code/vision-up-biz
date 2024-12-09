@@ -115,7 +115,7 @@
         </div>
     
     
-        <div class="d-md-none swiper" id="service-carousel">
+        <div class="d-sm-none swiper" id="service-carousel">
           <div class="swiper-wrapper">
             <div class="swiper-slide service-slide">
                 <?php include './includes/page-components/home-includes/service-1-ja.php' ?>
@@ -130,12 +130,12 @@
         
           <div class="nav-arrows-wrapper d-flex align-items-center">
             <img
-              src="./images/carousel-arrow-left.svg"
+              src="./includes/images/global/carousel-arrow-left.svg"
               alt="arrow-left"
               class="swiper-custom-nav-arrow testimony-swiper-button-left"
             />
             <img
-              src="./images/carousel-arrow-right.svg"
+            src="./includes/images/global/carousel-arrow-right.svg"
               alt="arrow-right"
               class="swiper-custom-nav-arrow testimony-swiper-button-right"
             />
@@ -157,7 +157,7 @@
     <h3 class="case-study-emphasis mb-0 ml-2">A CASE STUDY</h3>
   </div>
   <p>私たちは2016年、学童保育型英会話スクール「Kids UP」を立ち上げました。大田区田園調布校を皮切りとし、東京、神奈川、千葉、埼玉に計34校まで拡大してきました。現在5,000人以上の会員が在籍しており、多くの子ども達の英語力向上に貢献してきました。Kids UPでは定期的なテストも実施しており、インターナショナルスクールにも劣らない結果も出ています。私たちが英会話スクール事業で培ってきたノウハウを提供し、日本各地で高品質な英会話スクール運営をお手伝いします。</p>
-  <button type="button" class="btn btn-lg btn-global btn-case-study">もっと読む　<span class="btn-arrow-emphasis">→</span></button>
+  <a href="success.php"><button type="button" class="btn btn-lg btn-global btn-case-study">もっと読む　<span class="btn-arrow-emphasis">→</span></button></a>
 </div>
 
 
