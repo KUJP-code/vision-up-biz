@@ -869,6 +869,9 @@
     display: flex;
     position: relative;
     margin-top: 1.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .success-3{

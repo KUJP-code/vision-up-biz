@@ -389,6 +389,26 @@ p{
 }
 
 
+.generic-page-top-left{
+  float: left; /* Makes the image float to the left */
+  margin-right: 1rem; /* Adds spacing between the image and text */
+  width: 33%; /* Adjust the width as needed */
+  height: auto; /* Maintains the aspect ratio */
+  border-radius: 1rem;
+}
+
+
+.generic-page-bottom-right {
+  float: right; /* Makes the image float to the right */
+  margin-left: 1rem; /* Adds spacing between the image and text */
+  width: 33%; /* Adjust the width as needed */
+  height: auto; /* Maintains the aspect ratio */
+  border-radius: 1rem; /* Adds rounded corners */
+  display: inline-block; /* Ensures proper wrapping behavior */
+}
+
+
+
 
 /* ----------FOOTER----------------- */
 
