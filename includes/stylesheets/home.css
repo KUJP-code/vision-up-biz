@@ -71,7 +71,7 @@
       width: 100%;
       height: fit-content;
       background-color: #DDDED9;
-      background-image: url(../images/home/home-hero-bg.webp);
+      background-image: url(../images/home/home-hero-bg.jpg);
       background-size: cover;
       background-position: top center;
     }
@@ -238,7 +238,7 @@
       height: 40rem;
       background: 
           linear-gradient(180deg, rgba(255, 255, 255, 0) 70%, rgba(0, 173, 207, 1) 100%),
-          url('../images/home/sub-hero-img.webp') center no-repeat;
+          url('../images/home/sub-hero-img.png') center no-repeat;
       background-size: cover;
       border-radius: 1rem;
       box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 1.5rem 2rem 0 rgba(0, 0, 0, 0.19);
@@ -495,7 +495,7 @@
       border-color:#fff;
       color:#00adcf;
     }
-    @media (min-width: 1200px) and (max-width: 1440px) {
+    @media (min-width: 1200px) and (max-width: 1475px) {
       .service-card-row{
         width: 90%;
         display: block;
@@ -518,6 +518,47 @@
 
     }
 
+    @media (min-width: 768px) and (max-width: 992px) {
+      .service-card-row{
+        width: 95%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto
+      }
+
+      .service-h3{
+        font-size: 1.2rem;
+      }
+      
+
+      .service-card-1, .service-card-2{
+        width: 30%;
+        margin-top: 3rem;
+        border-radius: 1rem;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        padding: .75rem;
+    
+      }
+  
+
+      .service-text{
+        font-size: .8rem;
+      
+      }
+
+
+      .service-btn-1, .service-btn-2, .service-btn-3{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin: .3rem;
+        margin-left: .5rem;
+        margin-right: .5rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
 
 
     @media (min-width: 992px) and (max-width: 1200px) {
@@ -558,8 +599,36 @@
       
     }
   
+    @media (min-width: 576px) and (max-width: 768px) {
+      .service-card-row{
+        width: 99%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto
+    
+      }
+
+      .service-card-1, .service-card-2{
+        padding: .5rem;
+        width: 32%;
+
+      }
+      .service-btn-1, .service-btn-2, .service-btn-3{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin: .3rem;
+        margin-left: .5rem;
+        margin-right: .5rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+
+    }
+
   
-    @media (min-width: 0px) and (max-width: 575.98px) {
+    @media (min-width: 0px) and (max-width: 576px) {
   
   .service-card-title{
     font-size: 1.5rem;
@@ -582,6 +651,7 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
+      width: fit-content;
     }
   
   
@@ -640,7 +710,7 @@
     max-width: 65%;
     display: block;
     margin-left: auto;
-    margin-right: auto;1
+    margin-right: auto;
   }
   
   .cta-btn{
@@ -922,9 +992,12 @@
 
   /* --------------------FAQ ACCORDION--------------------------*/
 
+
+  
 /* Accordion Styles */
 .accordion {
   padding-bottom: 1rem;
+  margin-bottom: 5rem;
 }
 
 .accordion-item {
