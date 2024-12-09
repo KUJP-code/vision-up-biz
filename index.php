@@ -159,7 +159,21 @@
   <p>私たちは2016年、学童保育型英会話スクール「Kids UP」を立ち上げました。大田区田園調布校を皮切りとし、東京、神奈川、千葉、埼玉に計34校まで拡大してきました。現在5,000人以上の会員が在籍しており、多くの子ども達の英語力向上に貢献してきました。Kids UPでは定期的なテストも実施しており、インターナショナルスクールにも劣らない結果も出ています。私たちが英会話スクール事業で培ってきたノウハウを提供し、日本各地で高品質な英会話スクール運営をお手伝いします。</p>
   <a href="success.php"><button type="button" class="btn btn-lg btn-global btn-case-study">もっと読む　<span class="btn-arrow-emphasis">→</span></button></a>
 </div>
+<div class="col-sm-6">
+  <div class="row">
+    <div class="col-sm-6 success-images-row">
+      <img src="./includes/images/home/success-1.png" alt="" class="success-image">
+    </div>
+    <div class="col-sm-6">
+      <img src="./includes/images/home/success-2.png" alt="" class="success-image">
 
+      <div class="learn-with-fun">
+        <img src="./includes/images/home/success-3.svg" alt="" class="success-3">
+      </div>
+    </div>
+  </div>
+
+</div>
 
       </div>
       <h2 class="text-black home-h2 text-center h2-padding">DATA<span class="period-detail">.</span></h2>

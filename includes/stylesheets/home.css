@@ -849,7 +849,34 @@
   font-style: normal;
   }
   
+
+  .success-images-row{
+    position: relative;
+    z-index: 3;
+  }
+
+  .success-image{
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+  }
+
+  .learn-with-fun{
+    width: 100%;
+    height: fit-content;
+    border-radius: 1rem;
+    background-color: #FE8101;
+    display: flex;
+    position: relative;
+    margin-top: 1.5rem;
+  }
   
+  .success-3{
+    justify-content: middle center;
+    width: 90%;
+    padding: 1.5rem;
+
+  }
   
   @media (min-width: 0px) and (max-width: 575.98px) {
 
