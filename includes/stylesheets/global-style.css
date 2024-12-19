@@ -201,10 +201,15 @@ p{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 100%;
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
+
+  h1{
+    font-size: 3.5rem;
+  }
+
 }
 
 
@@ -365,7 +370,7 @@ p{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 15rem;
+  padding-top: 10rem;
 }
 
 .hero-blue-bottom{
@@ -388,6 +393,43 @@ p{
 
 }
 
+
+.generic-page-top-left{
+  float: left; /* Makes the image float to the left */
+  margin-right: 1rem; /* Adds spacing between the image and text */
+  width: 45%; /* Adjust the width as needed */
+  height: auto; /* Maintains the aspect ratio */
+  border-radius: 1rem;
+}
+
+
+.generic-page-bottom-right {
+  float: right; /* Makes the image float to the right */
+  margin-left: 1rem; /* Adds spacing between the image and text */
+  width: 33%; /* Adjust the width as needed */
+  height: auto; /* Maintains the aspect ratio */
+  border-radius: 1rem; /* Adds rounded corners */
+  display: inline-block; /* Ensures proper wrapping behavior */
+}
+
+
+
+.content{
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 0px) and (max-width: 575.98px) {
+  .generic-page-top-left{
+    float: left; /* Makes the image float to the left */
+    margin-right: 0rem; /* Adds spacing between the image and text */
+    width: 100%; /* Adjust the width as needed */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+  }
+
+}
 
 
 /* ----------FOOTER----------------- */

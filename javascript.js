@@ -1,7 +1,7 @@
 
 
   
- // Initialize Swiper for testimony carousel
+ // Initialize Swiper for testimony carousel lel
 const testimonySwiper = new Swiper("#testimony-carousel", {
   slidesPerView: 1.75,
   centeredSlides: true,
