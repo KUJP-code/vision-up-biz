@@ -1197,6 +1197,7 @@ font-size: 1rem;
 .accordion {
   padding-bottom: 1rem;
   margin-bottom: 5rem;
+  font-family: "M PLUS 1p", sans-serif;
 }
 
 .accordion-item {
@@ -1224,7 +1225,7 @@ font-size: 1rem;
   font-family: "Noto Sans JP", sans-serif;
   color: #191919;
   background-color: transparent;
-  font-family: "Shin-Maru-GP-DeBold";
+  font-family: "M PLUS 1p", sans-serif;
   text-align: left;
   font-size: 1.5rem;
   font-weight: bold;
@@ -1317,7 +1318,7 @@ font-size: 1rem;
 
 /* Accordion Body Styles */
 .accordion-body {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "M PLUS 1p", sans-serif;
   color: #63574a;
   text-align: left;
   font-weight: 400;
