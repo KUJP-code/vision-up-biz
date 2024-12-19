@@ -355,6 +355,22 @@ p{
   color: #00adcf !important;
   background-color: #fff;
 }
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .nav-link{
+    font-size: .9rem
+    ;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .nav-link{
+    font-size: .9rem
+    ;
+  }
+}
+
+
 /* -------------COMMON PAGES-------------- */
 
 .hero-outer-common{

@@ -16,9 +16,13 @@ const testimonySwiper = new Swiper("#testimony-carousel", {
   },
   breakpoints: {
     576: {
-      slidesPerView: 1.5,
+      slidesPerView: 1.25,
     },
     768: {
+      slidesPerView: 1.5,
+    },
+
+    1200: {
       slidesPerView: 1.75,
     },
   },
