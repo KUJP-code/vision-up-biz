@@ -129,6 +129,7 @@
     @media (min-width: 0px) and (max-width: 575.98px) {
   
       .hero-btn-1{
+        width: 100%;
         background-color: #ffffff00;
         color:  #DDDED9;
         border-color: #DDDED9;
@@ -136,6 +137,7 @@
         margin-left: auto !important;
         margin-right: auto !important;
       }
+      
       
       
       .hero-btn-1:hover{
@@ -293,6 +295,8 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
+      position: relative;
+      z-index: 1;
   
     }
   
@@ -674,7 +678,7 @@
       mask-repeat: no-repeat;
       margin-top: -2rem;
       margin-bottom: -2rem;
-      z-index: -10;
+      z-index: 0;
    
 
       mask-image: url("../images/home/mask-upper.svg"),
@@ -730,6 +734,15 @@
   }
   
   @media (min-width: 0px) and (max-width: 575.98px) {
+
+.cta-h2{
+  font-size: 2rem;
+}
+.cta-h3{
+  font-size: 1.25rem;
+}
+
+
     .call-to-action-outer{
       background-color: #00adcf;
       width: 100%;
@@ -748,10 +761,26 @@
       z-index: -10;
    
   }
+
+    
+  .cta-btn{
+margin-left: 0rem;
+margin-right: 0;
+font-size: 1rem;
+
+  }
+  
   }
   
   /* --------------------CASE STUDY--------------------------*/
   
+  .success-story{1
+    position: relative;
+    display: block;
+    z-index: 1;
+  }
+
+
   .case-study-emphasis{
     color:#00adcf;
     font-size: 1.5rem;
@@ -840,7 +869,7 @@
   
   
   .data-text-3{
-    font-size: 1.5rem;
+  font-size: 1.5rem;
   line-height: 1;
   
   padding-bottom: 2rem;
@@ -915,6 +944,7 @@
   
   .swiper-wrapper {
     display: flex;
+ height: fit-content;
   }
   
   .speech-bubble {
@@ -1167,4 +1197,13 @@
 .bottom-section {
   background-color: transparent;
   padding-bottom: 0;
+}
+
+@media (min-width: 0px) and (max-width: 575.98px) {
+  .accordion-btn-icon{
+    width: 10rem;
+    margin-right: 0rem;
+    margin-left: 0rem
+    ;
+  }
 }
