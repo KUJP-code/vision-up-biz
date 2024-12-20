@@ -257,9 +257,21 @@
       .hero-textbox-mobile-text{
         color: #DDDED9
       }
+
+      .h1-home{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+        padding-top: 1.75rem;
+      }
   
+      @media (min-width: 0px) and (max-width: 388.98px) {
+      .h1-home{
+        font-size: 2rem;
+      }
     }
-  
+  }
   
       /* ----------HERO - BOTTOM----------------- */
   
@@ -815,7 +827,7 @@
       mask-image: url("../images/home/mask-upper.svg"),
       linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)),
       url("../images/home/mask-lower.svg");
-    mask-size:
+      mask-size:
       100% auto,
       100% 70%,
       100% auto;
@@ -879,6 +891,7 @@
 }
 .cta-h3{
   font-size: 1.25rem;
+  max-width: 90%;
 }
 
 
@@ -889,7 +902,7 @@
       background-image: url(../images/home/cta-bg-decoration.svg);
       background-repeat: no-repeat;
       background-attachment: fixed;
-      background-size: 100% 100%;
+      background-size: 150% 150%;
       background-position: top left;    
       -webkit-mask-image: none;
       mask-image: none;
@@ -899,6 +912,17 @@
       margin-bottom: -3rem;
       z-index: -10;
    
+
+      mask-image: url("../images/home/mask-upper.svg"),
+      linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)),
+      url("../images/home/mask-lower.svg");
+    mask-size:
+      100% auto,
+      100% 70%,
+      100% auto;
+    mask-position: top, center, bottom;
+    mask-repeat: no-repeat;
+
   }
 
     
@@ -908,17 +932,35 @@ margin-right: 0;
 font-size: 1rem;
 
   }
+
+  .cta-inner{
+    padding-top:0rem;
+    padding-bottom: 0rem;
+  }
   
   }
   
   /* --------------------CASE STUDY--------------------------*/
-  
+  .success-story-row{
+    height: fit-content;
+  display: flex;
+  align-items: center; /* Vertically centers the item */
+  justify-content: center; /* Horizontally centers the item (optional) */
+  }
+
+
   .success-story{
     position: relative;
     display: block;
     z-index: 1;
   }
 
+  .success-pictures-col{
+    display: flex;
+    align-items: center; /* Vertically centers the item */
+    justify-content: center; /* Horizontally centers the item (optional) */
+    height: 100%;
+  }
 
   .case-study-emphasis{
     color:#00adcf;
@@ -1050,12 +1092,68 @@ font-size: 1rem;
   }
   
   @media (min-width: 0px) and (max-width: 575.98px) {
-
+.success-h2{
+  font-size: 1.75rem;
+  width: 50%;
+}
     .btn-case-study{
   display: block;
   margin-left: auto;
   margin-right: auto;
     }
+
+    .success-image{
+      margin-top: 2rem;
+    }
+    .data-text-1, .data-text-2, .data-text-3{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+
+    .data-text-1{
+      padding-top: 2rem;
+      padding-bottom: .5rem;
+      text-align: center;
+    }
+
+    .data-text-2{
+      font-size: 3.5rem;
+
+    line-height: 1;
+    padding-bottom: 2rem;
+    text-align: center;
+    }
+
+    .data-text-3{
+      padding-top: .5rem;
+      padding-bottom: 2rem;
+      text-align: center;
+    }
+
+    .data-col-1{
+      border-style: solid;
+      border-right-width: 0px;
+      border-right-color: #19191924;
+      border-bottom-width: 1px;
+      }
+      
+      .data-col-2{
+        border-style: solid;
+      border-left-width: 0px;
+      border-left-color: #19191924;
+      border-bottom-width: 1px;
+      padding-top: 2rem;
+      }
+      
+      .data-col-3{
+        padding-top: 2rem;
+        border-style: solid;
+      border-left-width: 0px;
+      border-left-color: #19191924;
+      padding-bottom: 2rem;
+      }
   }
   
 

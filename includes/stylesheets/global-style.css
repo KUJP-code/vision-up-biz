@@ -223,6 +223,11 @@ p{
   background-color: #00ADCF;
 }
 
+.navbar-black{
+  background-color: #191919;
+}
+
+
 
   .navbar-custom {
     width: 90%;
@@ -316,34 +321,16 @@ p{
 
 
 .navlink-language-blue {
-  margin-left: auto;
   background-color: #00ADCF;
   color: #ffffff !important;
-  border-style: solid;
-  border-width: 0.25rem;
   border-color: #ffffff;
-  border-radius: 0px 0.25rem 0.25rem 0px;
-  margin-left: 0px !important;
-  margin-right: 0.3125rem !important;
-  padding-left: 0.75rem !important;
-  padding-right: 0.75rem !important;
-  border-left-width: 0.125rem !important;
 }
 
 
 .navlink-contact-blue {
-  margin-left: auto;
   background-color: #00ADCF;
   color: #ffffff !important;
-  border-style: solid;
-  border-width: 0.25rem;
   border-color: #ffffff;
-  border-radius: 0.25rem 0px 0px 0.25rem;
-  margin-left: 0.3125rem !important;
-  margin-right: 0px !important;
-  padding-left: 0.75rem !important;
-  padding-right: 0.75rem !important;
-  border-right-width: 0.125rem !important;
 }
 
 .navlink-language-blue:hover {
@@ -373,13 +360,35 @@ p{
 
 /* -------------COMMON PAGES-------------- */
 
+
 .hero-outer-common{
+  background-repeat: no-repeat;
+  mask-image: url("../images/global/common-hero-mask.svg");
+  -webkit-mask-image: url("../images/global/common-hero-mask.svg"); /* For browser compatibility */
+  mask-size: 101% auto;
+  -webkit-mask-size: 101% auto;
+  mask-position: bottom;
+  -webkit-mask-position: bottom;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 10% 0%;
+  background-size: 40%;
 
 }
 
-.hero-blue{
+.hero-blue {
   background-color: #00ADCF;
+  background-image: url(../images/global/common-header-bg-white.svg);
+
 }
+
+.hero-black {
+  background-color: #191919;
+  background-image: url(../images/global/common-header-bg-black.svg);
+
+}
+
 
 .hero-inner-common{
   width: 90%;
@@ -387,27 +396,9 @@ p{
   margin-left: auto;
   margin-right: auto;
   padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
-.hero-blue-bottom{
-  background-color: #00ADCF;
-  width: 101%;
-  aspect-ratio: 640 / 31;
-  -webkit-mask-image: url(../images/global/hero-mask.svg);
-  mask-image: url(../images/global/hero-mask.svg);
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  mask-position: center;
-  z-index: 10;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  overflow-x: hidden;
-  margin-left: -0.5%;
-  transform: translateY(99%);
-  margin-bottom: 2rem;
-
-}
 
 
 .generic-page-top-left{
@@ -426,6 +417,7 @@ p{
   height: auto; /* Maintains the aspect ratio */
   border-radius: 1rem; /* Adds rounded corners */
   display: inline-block; /* Ensures proper wrapping behavior */
+  bottom: 0%;
 }
 
 
@@ -445,6 +437,18 @@ p{
     margin-bottom: 1rem;
   }
 
+  .hero-inner-common{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .hero-outer-common{
+
+    background-size: 80%;
+  
+  }
+  
+
 }
 
 
@@ -454,24 +458,30 @@ p{
   background-color: #191911;
   width: 101%;
   aspect-ratio: 640 / 31;
+
+  
   -webkit-mask-image: url(../images/global/footer-mask.svg);
   mask-image: url(../images/global/footer-mask.svg);
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   mask-position: center;
-  margin-top: -3rem;
+
   z-index: 10;
   display: block;
   margin-left: auto;
   margin-right: auto;
   overflow-x: hidden;
   margin-left: -0.5%;
+
+
+
+
 }
 
 
 .footer-wrapper {
   margin-top: -1px;
-  background-color: #191911;
+  background-color: #191919;
   overflow-x: hidden;
   padding-bottom: 2rem;
   overflow-x: hidden;
@@ -728,7 +738,19 @@ line-height: 2rem;
  margin-left: auto;
 }
 
+.footer-address {
+  font-size: .7rem;
+}
+
+
+@media (min-width: 0px) and (max-width: 357.98px) {
+.footer-link{
+  font-size: .8rem;
+}
 
 
 }
+
+}
+
 

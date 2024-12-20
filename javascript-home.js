@@ -111,6 +111,9 @@ function initializeSwiper() {
     spaceBetween: 10,
     loop: true,
     lazy: true,
+    keyboard: {
+      enabled: true,
+    },
     navigation: {
       nextEl: ".testimony-swiper-button-right",
       prevEl: ".testimony-swiper-button-left",
