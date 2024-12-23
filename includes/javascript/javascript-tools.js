@@ -15,6 +15,10 @@ const testimonySwiper = new Swiper("#testimony-carousel", {
     prevEl: ".testimony-swiper-button-left",
   },
   breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },  
+
     576: {
       slidesPerView: 1.25,
     },
