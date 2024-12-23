@@ -1,0 +1,126 @@
+/* ----------FOOTER----------------- */
+
+.form-row{
+    padding-top: 2rem;
+  }
+  
+  .form-col{
+    background-color: #f3f3f3;
+    padding: 2rem;
+    border-radius: 2rem;
+    margin-right: .5%;
+    width: 49.5%;
+  }
+  
+  .form-row-picture{
+    padding: 2rem;
+    border-radius: 2rem;
+    background-image: url(/includes/images/contact/contact.webp);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: .5%;
+    width: 49.5%;
+  }
+  
+  .form-wrapper{
+    width: fit-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  
+  }
+  
+  .form-label{
+    font-size: 1.2rem;
+    padding-top: 2rem;
+    display: block;
+    margin-bottom: -1rem;
+    font-weight: normal;
+  
+  }
+  
+  .form-input{
+    box-shadow: none !important;
+    border-style: solid !important;
+    border-color: #DDDDDD ;
+    width: 100%;
+    display: block;
+    margin-right: auto;
+    line-height: 1.5rem;
+    padding: .25rem;
+    border-radius: .25rem;
+  
+  }
+  
+  .form-mandatory-txt{
+    font-size: .8rem;
+    color:  #949494 ;
+    margin-top: -1rem;
+  }
+  
+  .form-btn{
+  background-color: #ffffff00;
+  color: rgb(0, 0, 0);
+  border-color: #000000;
+  transition: ease-in-out .3s;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+  padding-left: 3rem;
+  padding-right: 3rem;
+  
+  }
+  
+  .form-btn:hover{
+    background-color: white;
+    color: #00adcf;
+    border-color: #00adcf;
+  }
+  
+  .confirmation-wrapper{
+    height: 60vh;
+  }
+  
+  
+  .confirmation{
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  @media (min-width: 0px) and (max-width: 575.98px) {
+  
+    .form-row{
+      padding-top: 1rem;
+    }
+  
+    .form-col{
+      width: 100%;
+    }
+  
+    .form-wrapper{
+      width: 90%;
+    }
+  
+  
+    .form-input{
+      width: 100%;
+    }
+  
+    .form-label{
+   padding-left: 0%;
+    }
+  
+  
+    .form-btn{
+      margin-left: 0%;
+    }
+  }
+  
+  
