@@ -460,6 +460,17 @@ p{
   padding-bottom: 10rem;
 }
 
+.generic-image-col-left{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 2rem; /* Adds spacing between the image and text */
+  width: 100%; /* Adjust the width as needed */
+  height: auto; /* Maintains the aspect ratio */
+  border-radius: 1rem;
+  -webkit-box-shadow:0px 0px 105px 10px rgba(10,10,10,0.1);
+  -moz-box-shadow: 0px 0px 105px 10px rgba(10,10,10,0.1);
+  box-shadow: 0px 0px 105px 10px rgba(10,10,10,0.1);
+}
 
 
 .generic-image-left{
@@ -507,6 +518,15 @@ p{
     border-radius: 1rem;
     margin: 0rem;
   }
+
+  .generic-image-col-left{
+    margin-right: 0rem; /* Adds spacing between the image and text */
+    width: 100%; /* Adjust the width as needed */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 1rem;
+    margin: 0rem;
+  }
+  
 
   .hero-inner-common{
     padding-top: 5rem;
