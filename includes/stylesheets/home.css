@@ -299,7 +299,7 @@
       height: 40rem;
       background: 
           linear-gradient(180deg, rgba(255, 255, 255, 0) 70%, rgba(0, 173, 207, 1) 100%),
-          url('../images/home/sub-hero-img.png') center no-repeat;
+          url('/includes/images/home/sub-hero-img.webp') center no-repeat;
       background-size: cover;
       border-radius: 1rem;
       box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 1.5rem 2rem 0 rgba(0, 0, 0, 0.19);
@@ -854,7 +854,7 @@
     color: #f6f6f6;
     padding-bottom: 1rem;
     font-size: 1.75rem;
-    max-width: 65%;
+    max-width: 75%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -990,6 +990,9 @@ font-size: 1rem;
   }
   
   
+  .data-row{
+    padding-bottom: 2rem;
+  }
   
   .data-col-1{
   border-style: solid;
@@ -1029,7 +1032,7 @@ font-size: 1rem;
   
   
   .data-text-1{
-    font-size: 2rem;
+    font-size: 1.75rem;
   line-height: 1;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -1040,7 +1043,7 @@ font-size: 1rem;
   
   
   .data-text-2{
-    font-size: 4.5rem;
+    font-size: 3.25rem;
     font-family: "M PLUS 1p", sans-serif;
     font-weight: 800;
     font-style: normal;
