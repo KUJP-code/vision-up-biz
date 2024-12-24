@@ -53,6 +53,8 @@ body{
   display: block;
   z-index: 2;
   padding: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   border-radius: 2rem;
 }
 

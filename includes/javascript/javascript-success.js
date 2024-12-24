@@ -1,8 +1,8 @@
 
 
   
- // Initialize Swiper for testimony carousel lel
-const testimonySwiper = new Swiper("#testimony-carousel", {
+ // Initialize Swiper for success carousel
+const successSwiper = new Swiper("#success-slider", {
   slidesPerView: 1.75,
   centeredSlides: true,
   spaceBetween: 20,
@@ -11,8 +11,8 @@ const testimonySwiper = new Swiper("#testimony-carousel", {
     enabled: true,
   },
   navigation: {
-    nextEl: ".testimony-swiper-button-right",
-    prevEl: ".testimony-swiper-button-left",
+    nextEl: ".success-swiper-button-right",
+    prevEl: ".success-swiper-button-left",
   },
   breakpoints: {
     0: {
@@ -58,7 +58,7 @@ const testimonySwiper = new Swiper("#testimony-carousel", {
 // Utility function to apply active classes
 function applyActiveClasses(slide) {
   if (!slide) return;
-  const speechBubble = slide.querySelector('.speech-bubble');
+  const speechBubble = slide.querySelector('.success-swiper');
   const text = slide.querySelector('.testimony-text');
   const name = slide.querySelector('.testimony-name');
   const title = slide.querySelector('.testimony-title');
@@ -72,7 +72,7 @@ function applyActiveClasses(slide) {
 // Utility function to clear active classes
 function clearActiveClasses(slide) {
   if (!slide) return;
-  const speechBubble = slide.querySelector('.speech-bubble');
+  const speechBubble = slide.querySelector('.success-swiper');
   const text = slide.querySelector('.testimony-text');
   const name = slide.querySelector('.testimony-name');
   const title = slide.querySelector('.testimony-title');

@@ -948,11 +948,19 @@ font-size: 1rem;
   justify-content: center; /* Horizontally centers the item (optional) */
   }
 
+  .success-container{
+    margin-bottom: 2rem;
+  }
+
+  .success-h2{
+    font-size: 2rem;
+  }
 
   .success-story{
     position: relative;
     display: block;
     z-index: 1;
+
   }
 
   .success-pictures-col{
@@ -972,7 +980,8 @@ font-size: 1rem;
     border-style: solid;
     width: fit-content;
     height: fit-content;
-    margin-left: 1rem;
+    margin-left: auto;
+    margin-right: 1rem;
     line-height: 1;
   
   }
@@ -988,80 +997,6 @@ font-size: 1rem;
     color: #fff;
     background-color: #191919;
   }
-  
-  
-  .data-row{
-    padding-bottom: 2rem;
-  }
-  
-  .data-col-1{
-  border-style: solid;
-  border-right-width: 2px;
-  border-right-color: #19191924;
-  }
-  
-  .data-col-2{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .data-col-3{
-    border-style: solid;
-  border-left-width: 2px;
-  border-left-color: #19191924;
-  }
-  
-  
-  .data-icon-1, .data-icon-2, .data-icon-3{
-    width: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .data-icon-2{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .data-text-1, .data-text-2, .data-text-3{
-    margin-left: 4rem;
-  }
-  
-  
-  .data-text-1{
-    font-size: 1.75rem;
-  line-height: 1;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  font-family: "M PLUS 1p", sans-serif;
-  font-weight: 800;
-  font-style: normal;
-  }
-  
-  
-  .data-text-2{
-    font-size: 3.25rem;
-    font-family: "M PLUS 1p", sans-serif;
-    font-weight: 800;
-    font-style: normal;
-  line-height: 1;
-  padding-bottom: 2rem;
-  }
-  
-  
-  .data-text-3{
-  font-size: 1.5rem;
-  line-height: 1;
-  
-  padding-bottom: 2rem;
-  font-family: "M PLUS 1p", sans-serif;
-  font-weight: 800;
-  font-style: normal;
-  }
-  
 
   .success-images-row{
     position: relative;
@@ -1093,76 +1028,7 @@ font-size: 1rem;
     padding: 1.5rem;
 
   }
-  
-  @media (min-width: 0px) and (max-width: 575.98px) {
-.success-h2{
-  font-size: 1.75rem;
-  width: 50%;
-}
-    .btn-case-study{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-    }
 
-    .success-image{
-      margin-top: 2rem;
-    }
-    .data-text-1, .data-text-2, .data-text-3{
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-
-    .data-text-1{
-      padding-top: 2rem;
-      padding-bottom: .5rem;
-      text-align: center;
-    }
-
-    .data-text-2{
-      font-size: 3.5rem;
-
-    line-height: 1;
-    padding-bottom: 2rem;
-    text-align: center;
-    }
-
-    .data-text-3{
-      padding-top: .5rem;
-      padding-bottom: 2rem;
-      text-align: center;
-    }
-
-    .data-col-1{
-      border-style: solid;
-      border-right-width: 0px;
-      border-right-color: #19191924;
-      border-bottom-width: 1px;
-      }
-      
-      .data-col-2{
-        border-style: solid;
-      border-left-width: 0px;
-      border-left-color: #19191924;
-      border-bottom-width: 1px;
-      padding-top: 2rem;
-      }
-      
-      .data-col-3{
-        padding-top: 2rem;
-        border-style: solid;
-      border-left-width: 0px;
-      border-left-color: #19191924;
-      padding-bottom: 2rem;
-      }
-  }
-  
-
-
-  
-  
 
   /* --------------------FAQ ACCORDION--------------------------*/
 
