@@ -1,15 +1,16 @@
 .company-info {
     line-height: 1.6;
-    margin-left: auto;
+    margin-left: 0;
     margin-right: auto;
-    max-width: 750px;
-    padding: 20px;
+    max-width: 800px;
+    padding-top: 1rem;
     border-radius: 1rem;
+    padding-bottom: 1rem;
 
 }
 
 .company-info h2 {
-    text-align: center;
+    text-align: left;
     margin-bottom: 1rem;
     font-size: 1.5rem;
     color: #1d1d1b;
