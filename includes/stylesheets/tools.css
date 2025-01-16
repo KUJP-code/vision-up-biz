@@ -1,0 +1,194 @@
+.cefr-chart {
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+/* --------------------BIG INFO SWIPER-------------------------- */
+
+.swiper-container {
+  width: 100%;
+  overflow: visible;
+  padding-top: 3rem;
+}
+
+.swiper-slide {
+  width: calc(100% / 3); /* Adjust width to show part of the next and previous slides */
+  transition: transform 1.15s ease, filter 0.3s ease; /* Smooth transition for transform and filter */
+  transform: translateY(5rem);
+  height: fit-content;
+}
+
+.swiper-slide-active {
+  filter: none; /* Remove grayscale filter on active slide */
+  filter: drop-shadow(0rem 5rem 3rem #0000003b);
+  transform: translateY(0); /* Reset transform on active slide */
+}
+
+.swiper-wrapper {
+  display: flex;
+  height: fit-content;
+  margin-top: 2rem;
+}
+
+.sample-box {
+  transition: background-color 0.3s ease, transform 0.1s ease; /* Smooth transition for background color and transform */
+  width: 100%;
+  aspect-ratio: 2/1.1;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #15cf0000; /* Default background color */
+  border-radius: 1rem;
+  margin-top: 0rem;
+  transition: ease-in-out 0.2s;
+  padding: 1rem;
+  position: relative;
+  overflow: hidden; /* Ensures the image doesn't overflow */
+}
+
+.sample-img {
+  height: 100%; /* Makes the image match the height of .sample-box */
+  width: auto; /* Maintains the aspect ratio of the image */
+  object-fit: contain; /* Ensures the image fits within the box without distortion */
+  filter: grayscale(1);
+  opacity: 0.3;
+  position: absolute; /* Allows precise positioning within .sample-box */
+  top: 0;
+  left: 0%;
+  transform: translateX(0%); /* Centers the image horizontally */
+  padding: 2rem;
+  z-index: 0;
+}
+
+.swiper-slide-active .sample-box {
+  background-color: #00adcf;
+  margin-top: -2rem;
+  transition: ease-in-out .2s;
+}
+
+.swiper-slide-active .sample-img {
+  filter: grayscale(0) drop-shadow(10px 10px 20px #000000);
+  opacity: 1;
+}
+
+.sample-box.active {
+  background-color: #00adcf;
+}
+
+.sample-box-text-wrapper {
+  width: 50%;
+  height: 100%;
+  margin-left: 50%;
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column; /* Ensure vertical alignment */
+  justify-content: center; /* Align text and button */
+  align-items: flex-start; /* Left-align content */
+  z-index: 2;
+}
+
+.testimony-name,
+.testimony-title,
+.testimony-text,
+.sample-img {
+  text-align: left;
+  transition: color 0.1s ease; /* Smooth transition for text color */
+}
+
+
+
+.testimony-title {
+  font-weight: 400;
+  color: #cfcfcf; /* Default text color */
+  margin-bottom: 1rem; /* Add spacing between text and button */
+}
+
+.swiper-slide-active .testimony-title {
+  color: #ffffff; /* Active text color */
+}
+
+.swiper-slide-active .testimony-text {
+  color: #ffffff; /* Text color for active slide */
+}
+
+.swiper-slide-active .testimony-name,
+.swiper-slide-active .testimony-title,
+.swiper-slide-active .sample-btn {
+  color: #ffffff; /* Text color for center slide */
+}
+
+.testimony-text.active {
+  color: #ffffff; /* Text color for active slide */
+}
+
+.testimony-name.active,
+.testimony-title.active {
+  color: #fff; /* Text color for center slide */
+}
+
+.sample-btn {
+  color: #cfcfcf; /* Default button text color */
+  background-color: transparent;
+  border: 2px solid #cfcfcf; /* Default button border color */
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease; /* Smooth transition for hover and active states */
+}
+
+.swiper-slide-active .sample-btn {
+  color: #ffffff; /* Active button text color */
+  border-color: #ffffff; /* Active button border color */
+}
+
+.sample-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent hover state */
+}
+
+.nav-arrows-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 0rem;
+  margin-bottom: 3rem;
+}
+
+.swiper-custom-nav-arrow {
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  width: 4rem;
+  margin: 0.2rem;
+}
+
+.swiper-custom-nav-arrow:hover {
+  opacity: 0.6;
+}
+
+@media (max-width: 576px) {
+  .sample-box {
+    aspect-ratio: 1 /.6;
+  }
+
+  .sample-img {
+    height: auto; /* Makes the image match the height of .sample-box */
+    width: 50%; /* Maintains the aspect ratio of the image */
+
+  }
+  
+  
+  .swiper-slide {
+    width: calc(100% / 1.25); /* Adjust for smaller screens */
+  }
+
+  .swiper-custom-nav-arrow {
+    width: 3rem;
+  }
+
+  .testimony-title{
+    font-size: 1rem;
+    padding-bottom: 0rem;
+  }
+
+  .sample-btn{
+    font-size: 1rem;
+  }
+}
