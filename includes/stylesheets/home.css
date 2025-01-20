@@ -74,7 +74,16 @@
       background-image: url(../images/home/home-hero-bg.jpg);
       background-size: cover;
       background-position: top center;
+    }
 
+
+      
+    .home-hero-v2{
+      background-image: url(../images/home/home-hero-bg-v2.jpg);
+    }
+
+    .home-hero-v3{
+      background-image: url(../images/home/home-hero-bg-v3.jpg);
     }
   
     .home-hero-inner{
@@ -199,12 +208,22 @@
         width: 100%;
         height: fit-content;
         background-color: #DDDED9;
-        background-image: url(../images/home/home-hero-bg-mobile.webp);
+        background-image: url(../images/home/hero-mobile.webp);
         background-size:contain;
         background-repeat:  no-repeat;
         background-position: top center;
         aspect-ratio: 288 / 415;
       }
+
+            
+    .home-hero-v2{
+      background-image: url(../images/home/hero-mobile-v2.webp);
+    }
+
+    .home-hero-v3{
+      background-image: url(../images/home/hero-mobile-v3.webp);
+    }
+  
     
       .home-hero-inner{
         display: block;
