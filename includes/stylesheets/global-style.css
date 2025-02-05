@@ -437,8 +437,8 @@ p{
 
 .hero-outer-common{
   background-repeat: no-repeat;
-  mask-image: url("../images/global/common-hero-mask.svg");
-  -webkit-mask-image: url("../images/global/common-hero-mask.svg"); /* For browser compatibility */
+  mask-image: url("/includes/images/global/common-hero-mask.svg");
+  -webkit-mask-image: url("/includes/images/global/common-hero-mask.svg"); /* For browser compatibility */
   mask-size: 101% auto;
   -webkit-mask-size: 101% auto;
   mask-position: bottom;
@@ -453,13 +453,13 @@ p{
 
 .hero-blue {
   background-color: #00ADCF;
-  background-image: url(../images/global/common-header-bg-white.svg);
+  background-image: url(/includes/images/global/common-header-bg-white.svg);
 
 }
 
 .hero-black {
   background-color: #191919;
-  background-image: url(../images/global/common-header-bg-black.svg);
+  background-image: url(/includes/images/global/common-header-bg-black.svg);
 
 }
 
@@ -564,8 +564,8 @@ p{
   aspect-ratio: 640 / 31;
 
   
-  -webkit-mask-image: url(../images/global/footer-mask.svg);
-  mask-image: url(../images/global/footer-mask.svg);
+  -webkit-mask-image: url(/includes/images/global/footer-mask.svg);
+  mask-image: url(/includes/images/global/footer-mask.svg);
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   mask-position: center;
