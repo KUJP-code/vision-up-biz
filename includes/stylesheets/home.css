@@ -71,7 +71,7 @@
       width: 100%;
       height: fit-content;
       background-color: #DDDED9;
-      background-image: url(../images/home/home-hero-bg.jpg);
+      background-image: url(/includes/images/home/home-hero-bg.jpg);
       background-size: cover;
       background-position: top center;
     }
@@ -79,11 +79,11 @@
 
       
     .home-hero-v2{
-      background-image: url(../images/home/home-hero-bg-v2.jpg);
+      background-image: url(/includes/images/home/home-hero-bg-v2.jpg);
     }
 
     .home-hero-v3{
-      background-image: url(../images/home/home-hero-bg-v3.jpg);
+      background-image: url(/includes/images/home/home-hero-bg-v3.jpg);
     }
   
     .home-hero-inner{
@@ -208,7 +208,7 @@
         width: 100%;
         height: fit-content;
         background-color: #DDDED9;
-        background-image: url(../images/home/hero-mobile.webp);
+        background-image: url(/includes/images/home/hero-mobile.webp);
         background-size:contain;
         background-repeat:  no-repeat;
         background-position: top center;
@@ -217,11 +217,11 @@
 
             
     .home-hero-v2{
-      background-image: url(../images/home/hero-mobile-v2.webp);
+      background-image: url(/includes/images/home/hero-mobile-v2.webp);
     }
 
     .home-hero-v3{
-      background-image: url(../images/home/hero-mobile-v3.webp);
+      background-image: url(/includes/images/home/hero-mobile-v3.webp);
     }
   
     
@@ -255,7 +255,7 @@
   
       .hero-textbox-mobile-outer{
         background-color: #191919;
-        background-image: url(/images/mobile-hero-bottom-bg.webp);
+        background-image: url(/includes/images/mobile-hero-bottom-bg.webp);
         background-repeat: no-repeat;
         background-size: cover;
         padding-bottom: 2rem;
@@ -386,7 +386,7 @@
       height: 20rem;
       background: 
           linear-gradient(180deg, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0) 100%),
-          url('../images/home/sub-hero-img.webp') center no-repeat;
+          url('/includes/images/home/sub-hero-img.webp') center no-repeat;
       background-size: cover;
       border-radius: 1rem;
       box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 1.5rem 2rem 0 rgba(0, 0, 0, 0.19);
@@ -511,7 +511,7 @@
       background-color: #00adcf;
       width: 32.5%;
       margin-bottom: 3rem;
-      background-image: url(../images/home/card-2-decoration.svg);
+      background-image: url(/includes/images/home/card-2-decoration.svg);
       background-repeat: no-repeat;
       background-position: bottom right;
       padding: 1.25rem;
@@ -831,7 +831,7 @@
       background-color: #00adcf;
       width: 100%;
       aspect-ratio: 3/ 1;
-      background-image: url(../images/home/cta-bg-decoration.svg);
+      background-image: url(/includes/images/home/cta-bg-decoration.svg);
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-size: 100% 100%;
@@ -843,9 +843,9 @@
       z-index: 0;
    
 
-      mask-image: url("../images/home/mask-upper.svg"),
+      mask-image: url("/includes/images/home/mask-upper.svg"),
       linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)),
-      url("../images/home/mask-lower.svg");
+      url("/includes/images/home/mask-lower.svg");
       mask-size:
       100% auto,
       100% 70%,
@@ -918,7 +918,7 @@
       background-color: #00adcf;
       width: 100%;
       aspect-ratio: 1/ 1;
-      background-image: url(../images/home/cta-bg-decoration.svg);
+      background-image: url(/includes/images/home/cta-bg-decoration.svg);
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-size: 150% 150%;
@@ -932,9 +932,9 @@
       z-index: -10;
    
 
-      mask-image: url("../images/home/mask-upper.svg"),
+      mask-image: url("/includes/images/home/mask-upper.svg"),
       linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)),
-      url("../images/home/mask-lower.svg");
+      url("/includes/images/home/mask-lower.svg");
     mask-size:
       100% auto,
       100% 70%,
