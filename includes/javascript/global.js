@@ -1,19 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
     const langSwitcher = document.querySelector(".navlink-language");
-    const currentLang = document.documentElement.lang; // Get current document language
-    let currentUrl = window.location.pathname;
+    if (!langSwitcher) return;
 
-    if (langSwitcher) {
+    langSwitcher.addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent default behavior
+
+        const currentLang = document.documentElement.lang;
+        let currentUrl = window.location.pathname;
         let newUrl = currentUrl;
 
         if (currentLang === "ja") {
-            // Add /en/ to the URL
             newUrl = currentUrl === "/index.html" ? "/en.html" : "/en" + currentUrl;
         } else if (currentLang === "en") {
-            // Remove /en/ from the URL
             newUrl = currentUrl === "/en.html" ? "/index.html" : currentUrl.replace(/^\/en\//, "/");
         }
 
-        langSwitcher.href = newUrl;
-    }
+        window.location.href = newUrl; // Perform the redirect
+    });
 });
