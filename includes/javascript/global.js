@@ -17,9 +17,11 @@ document.addEventListener("DOMContentLoaded", function () {
             } 
             // Handle all other pages (nested or not)
             else if (currentLang === "ja") {
-                newUrl = "/en" + currentUrl; // Add /en/ before the path
+                // Add /en/ ONLY if it's not already there
+                newUrl = currentUrl.startsWith("/en/") ? currentUrl : "/en" + currentUrl;
             } else if (currentLang === "en") {
-                newUrl = currentUrl.replace(/^\/en\//, "/"); // Remove /en/ from path
+                // Remove /en/ properly without duplicating anything
+                newUrl = currentUrl.replace(/^\/en/, "");
             }
 
             window.location.href = newUrl; // Redirect to the new URL
