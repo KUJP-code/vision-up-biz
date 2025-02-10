@@ -11,15 +11,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Handle homepage separately
             if (currentLang === "ja" && (currentUrl === "/" || currentUrl === "/index")) {
-                newUrl = "/en"; // Redirect to English homepage
+                newUrl = "/en.html"; // Redirect to English homepage
             } else if (currentLang === "en" && (currentUrl === "/en" || currentUrl === "/en/index")) {
-                newUrl = "/"; // Redirect to Japanese homepage
+                newUrl = "/index"; // Redirect to Japanese homepage (index.html or /)
+            }
+            // Handle English homepage (en.html) redirection
+            else if (currentLang === "en" && currentUrl === "/en.html") {
+                newUrl = "/index"; // Redirect to Japanese homepage
             }
             // Handle all other pages (nested or not)
             else if (currentLang === "ja") {
-                newUrl = "/en" + currentUrl; // Add /en/ before the path
+                // Add /en/ before the path (without .html extension)
+                newUrl = "/en" + currentUrl.replace(/^\/index$/, ""); 
             } else if (currentLang === "en") {
-                newUrl = currentUrl.replace(/^\/en/, ""); // Remove /en from the beginning of the path
+                // Remove /en/ from the beginning of the path (without .html extension)
+                newUrl = currentUrl.replace(/^\/en/, ""); 
             }
 
             window.location.href = newUrl; // Redirect to the new URL
