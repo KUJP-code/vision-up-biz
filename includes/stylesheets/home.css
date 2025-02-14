@@ -1140,6 +1140,7 @@ font-size: 1rem;
   display: inline-flex; /* Use flexbox for alignment */
   align-items: center; /* Vertically center the icon */
   justify-content: center; /* Horizontally center the icon */
+  padding: .2rem;
 }
 
 /* SVG Styles (inside the icon) */
