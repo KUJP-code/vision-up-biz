@@ -1061,8 +1061,6 @@ font-size: 1rem;
 
   /* --------------------FAQ ACCORDION--------------------------*/
 
-
-  
 /* Accordion Styles */
 .accordion {
   padding-bottom: 1rem;
@@ -1078,17 +1076,13 @@ font-size: 1rem;
   margin-bottom: 1rem;
   width: 100%;
   background-color: #fcfcfc;
-  
 }
 
-
 .accordion-item:not(.collapsed) {
-  background-color: #ffffff ; /* White background when expanded */
+  background-color: #ffffff; /* White background when expanded */
   border-radius: 2rem; /* Rounded edges when expanded */
   filter: none;
 }
-
-
 
 /* Accordion Button Styles */
 .accordion-button {
@@ -1104,6 +1098,8 @@ font-size: 1rem;
   border: none;
   transition: background-color 0.3s ease, color 0.3s ease;
   background-color: #ffffff3b;
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Vertically center content */
 }
 
 /* Highlight expanded button */
@@ -1112,8 +1108,6 @@ font-size: 1rem;
   color: #00adcf;
   background-color: rgba(255, 255, 255, 0) !important;
   border-bottom: none;
-
-
 }
 
 /* Fix styles for collapsed buttons */
@@ -1122,10 +1116,6 @@ font-size: 1rem;
   color: #191919;
   border-radius: 0rem !important;
   border-bottom: solid #d0d0d0;
-
-
-  
-  
 }
 
 /* Remove default icon */
@@ -1143,11 +1133,21 @@ font-size: 1rem;
 /* Icon Base Styles */
 .accordion-btn-icon {
   transition: transform 0.3s ease-in-out, stroke 0.3s ease-in-out;
-  width: 3rem;
-  height: 3rem;
-  margin-right: 1rem;
-  border-radius: 1rem;
+  width: 2.5rem; /* Start with a smaller, more reasonable size */
+  height: 2.5rem;
+  margin-right: 1rem; /* Adjust as needed */
+  flex-shrink: 0; /* Prevent icon from shrinking */
+  display: inline-flex; /* Use flexbox for alignment */
+  align-items: center; /* Vertically center the icon */
+  justify-content: center; /* Horizontally center the icon */
 }
+
+/* SVG Styles (inside the icon) */
+.accordion-btn-icon svg { /* Target the SVG inside the icon container */
+  width: 100%; /* Make SVG fill the icon container */
+  height: 100%;
+}
+
 
 /* SVG Base State */
 .accordion-icon-circle {
@@ -1209,11 +1209,29 @@ font-size: 1rem;
   padding-bottom: 0;
 }
 
-@media (min-width: 0px) and (max-width: 575.98px) {
-  .accordion-btn-icon{
-    width: 10rem;
-    margin-right: 0rem;
-    margin-left: 0rem
-    ;
+@media (max-width: 575.98px) {
+  .accordion-header{
+    font-size: 3rem;
   }
+  .accordion-button {
+    font-size: 1rem; /* Adjust font size if needed */
+    padding: 0.75rem 1rem; /* Adjust padding as needed */
+  }
+
+  .accordion-btn-icon {
+    width: 2.75rem; /* Slightly larger icon on mobile */
+    height: 2.75rem;
+    margin-right: 0.75rem; /* Adjust margin */
+  }
+
+  .accordion-body {
+    font-size: 0.9rem; /* Smaller font in the body on mobile */
+  }
+  html:lang(en) .accordion-header {
+    line-height: 1.2;
+  
+  }
+  
+
+ 
 }
