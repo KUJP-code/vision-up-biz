@@ -69,7 +69,7 @@ body{
 
 
 p{ 
-    line-height: 1.75 !important;
+    line-height: 1.75;
     font-weight: normal;
 	  text-align: left;
     font-family: "M PLUS 1p", sans-serif;
@@ -984,4 +984,28 @@ height: fit-content;
   .swiper-custom-nav-arrow {
     width: 3rem;
   }
+}
+
+
+@media (min-width: 1024px) and (max-width: 1260px) {
+  html:lang(ja) .nav-link {
+    font-size: 0.7rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  html:lang(ja) .nav-link {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  html:lang(ja) .nav-link {
+    font-size: 0.9rem;
+  }
+}
+html:lang(en) p {
+  letter-spacing: 0;
+  line-height: 1.5;
+
 }
