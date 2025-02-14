@@ -1,33 +1,7 @@
-<style>
-  @media (min-width: 1024px) and (max-width: 1260px) {
-  .nav-link{
-    font-size: .7rem
-    ;
-  }
-}
 
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .nav-link{
-    font-size: .8rem
-    ;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .nav-link{
-    font-size: .9rem
-    ;
-  }
-}
-
-
-
-</style>
-
-<nav id="navbar" class="fixed-top navbar-expand-lg  navbar-light navbar">
+<nav id="navbar" class="fixed-top navbar-expand-sm  navbar-light navbar">
   <div class="container-fluid nav-inner">
-    <a class="navbar-brand m-plus-1p-extrabold" href="/en.html">
+    <a class="navbar-brand" href="/en.html">
       <img src="/includes/images/global/navlogo-black.svg" alt="Vision UP" class="navlogo d-inline-block align-text-top">
     </a>
     <button class="menu navbar-toggler menu-white " type="button" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened')); document.getElementById('navbarNav').classList.toggle('show');" aria-label="Main Menu">
@@ -40,37 +14,38 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
-          <a class="nav-link m-plus-1p-extrabold" href="/en.html">HOME</a>
+          <a class="nav-link" href="/en.html">HOME</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link m-plus-1p-extrabold dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             SERVICES
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href= "/en/services.html">SERVICE MENU</a></li>
+            <li><a class="nav-link" href= "/en/services.html">SERVICE MENU</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="/en/services/expertise.html">SCHOOL LAUNCH KNOW-HOW</a></li>
-            <li><a class="dropdown-item" href="/en/services/training.html">STAFF TRAINING</a></li>
-            <li><a class="dropdown-item" href="/en/services/tools.html">EDUCATIONAL TOOLS</a></li>
+            <li><a class="nav-link" href="/en/services/expertise.html">KNOW-HOW</a></li>
+            <li><a class="nav-link" href="/en/services/training.html">TRAINING</a></li>
+            <li><a class="nav-link" href="/en/services/tools.html">TOOLS</a></li>
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link  m-plus-1p-extrabold " href="/en/success.html">SUCCESS STORY</a>
+          <a class="nav-link  " href="/en/success.html">SUCCESS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link m-plus-1p-extrabold  " href="/en/about.html">COMPANY PROFILE</a>
+          <a class="nav-link  " href="/en/about.html">COMPANY</a>
         </li>
+        <!---
         <li class="nav-item">
-          <a class="nav-link m-plus-1p-extrabold  " href="/en/staff.html">STAFF INTRODUCTION</a>
+          <a class="nav-link  " href="/en/staff.html">STAFF</a>
         </li>
-
+      -->
       </ul>
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link m-plus-1p-extrabold navlink-contact" href="/en/contact.html">CONTACT US</a>
+          <a class="nav-link navlink-contact" href="/en/contact.html">CONTACT</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link m-plus-1p-extrabold navlink-language" href="/index.html">JA</a>
+        <a class="nav-link navlink-language" href="/index.html">JA</a>
           </li>
       </ul>
     </div>

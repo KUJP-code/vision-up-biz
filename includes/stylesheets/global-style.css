@@ -77,7 +77,7 @@ p{
     font-style: normal;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     letter-spacing: .05rem;
 }
 
@@ -307,15 +307,49 @@ p{
   padding-left: 0rem !important;
 }
 
+.dropdown-menu{
+  border:none;
+  width: fit-content;
+  width: 15rem;
+  border-radius: 0;
+  transform: translateX(2rem);
+}
+
+.dropdown-divider{
+  border-width: .2rem
+  ;
+}
+
+.dropdown-menu-blue{
+  background-color: #00adcf;
+}
+
+.dropdown-menu-white{
+  background-color: #ffffff;
+}
+
+.dropdown-menu-black{
+  background-color: #191919;
+}
+
+.dropdown-divider-white{
+  border-color:  white !important;
+  opacity: 100%;
+}
+
+
 .navbar-nav .nav-link .dropdown-item {
   font-size: 1rem;
   margin-left: 1rem;
   margin-right: 1rem;
 }
 
+
+
 .navbar-nav .nav-link:first-child {
   margin-left: 1rem;
 }
+
 
 .navlink-black {
   color: #191919;
@@ -410,6 +444,7 @@ p{
   border-color: #ffffff;
 }
 
+
 @media (min-width: 768px) and (max-width: 992px) {
   .nav-link {
     font-size: .9rem;
@@ -438,27 +473,6 @@ p{
   justify-content: center; /* Horizontally center the SVG */
   outline: none !important;
   
-}
-
-.navbar .menu { /* Menu button inside the navbar */
-  outline: 2px solid #007bff;
-  outline-offset: 2px;
-}
-
-.navbar .menu:focus {
-  outline: 2px solid #007bff;
-  outline-offset: 2px;
-}
-
-/* OR, even more specific if necessary */
-#navbar .menu { /* Menu button inside the navbar with ID "navbar" */
-  outline: 2px solid #007bff;
-  outline-offset: 2px;
-}
-
-#navbar .menu:focus {
-  outline: 2px solid #007bff;
-  outline-offset: 2px;
 }
 
 
@@ -527,6 +541,32 @@ p{
     /* Example: */
     margin-right: 0;
   }
+}
+
+@media (max-width: 576px) {
+  .navlink-language,   .navlink-contact  {
+    border-width: 0rem;
+    border-radius: 0.25rem ;
+    margin-left: 0px !important;
+    margin-right: 0rem !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+
+  }
+  
+  .navlink-language {
+    border-width: .2rem;
+  }
+
+  .dropdown-menu{
+    background-color: #ffffff00;
+    border:none;
+    border-radius: 0;
+    margin-left: 1rem;
+    padding-left: 0;
+    width: 100%;
+  }
+
 }
 
 /* -------------COMMON PAGES-------------- */
