@@ -259,28 +259,27 @@ p{
 
 
 
-  /* ----------NAVBAR----------------- */
-.navbar{
+/* ----------NAVBAR----------------- */
+.navbar {
   background-color: white;
 }
 
-.navbar-blue{
+.navbar-blue {
   background-color: #00ADCF;
 }
 
-.navbar-black{
+.navbar-black {
   background-color: #191919;
 }
 
-
-
-  .navbar-custom {
-    width: 90%;
-    margin: 0 auto;
-    transition: background-color 0.3s, box-shadow 0.3s;
-    background-color: transparent;
-    box-shadow: none;
+.navbar-custom {
+  width: 90%;
+  margin: 0 auto;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  background-color: transparent;
+  box-shadow: none;
 }
+
 .navbar.scrolled {
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
   background-color: #5f5ba8;
@@ -288,89 +287,88 @@ p{
 }
 
 .navbar {
-    width: 100% !important;
-    margin-left: 0rem !important;
-    margin-right: 0rem !important;
-    padding-left: 0rem !important;
-    padding-right: 0rem !important;
+  width: 100% !important;
+  margin-left: 0rem !important;
+  margin-right: 0rem !important;
+  padding-left: 0rem !important;
+  padding-right: 0rem !important;
 }
 
 .nav-inner {
-    display: block;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .navlogo {
-    height: 1.5625rem;
-    margin-left: 0rem !important;
-    padding-left: 0rem !important;
+  height: 1.5625rem;
+  margin-left: 0rem !important;
+  padding-left: 0rem !important;
 }
 
 .navbar-nav .nav-link .dropdown-item {
-    font-size: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-.navbar-nav .nav-link:first-child {
-    margin-left: 1rem;
+  font-size: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
-.navlink-black{
+.navbar-nav .nav-link:first-child {
+  margin-left: 1rem;
+}
+
+.navlink-black {
   color: #191919;
 }
 
-.navlink-white{
+.navlink-white {
   color: #ffffff !important;
 }
 
 .navlink-language {
-    margin-left: auto;
-    background-color: #00adcf;
-    color: #fff !important;
-    border-style: solid;
-    border-width: 0.25rem;
-    border-color: #00adcf;
-    border-radius: 0px 0.25rem 0.25rem 0px;
-    margin-left: 0px !important;
-    margin-right: 0.3125rem !important;
-    padding-left: 0.75rem !important;
-    padding-right: 0.75rem !important;
+  margin-left: auto;
+  background-color: #00adcf;
+  color: #fff !important;
+  border-style: solid;
+  border-width: 0.25rem;
+  border-color: #00adcf;
+  border-radius: 0px 0.25rem 0.25rem 0px;
+  margin-left: 0px !important;
+  margin-right: 0.3125rem !important;
+  padding-left: 0.75rem !important;
+  padding-right: 0.75rem !important;
 }
 
 .navlink-contact {
-    margin-left: auto;
-    background-color: white;
-    color: #191919;
-    border-style: solid;
-    border-width: 0.25rem;
-    border-color: white;
-    border-radius: 0.25rem 0px 0px 0.25rem;
-    margin-left: 0.3125rem !important;
-    margin-right: 0px !important;
-    padding-left: 0.75rem !important;
-    padding-right: 0.75rem !important;
+  margin-left: auto;
+  background-color: white;
+  color: #191919;
+  border-style: solid;
+  border-width: 0.25rem;
+  border-color: white;
+  border-radius: 0.25rem 0px 0px 0.25rem;
+  margin-left: 0.3125rem !important;
+  margin-right: 0px !important;
+  padding-left: 0.75rem !important;
+  padding-right: 0.75rem !important;
 }
 
 .navlink-language:hover {
-    color: #00adcf !important;
-    background-color: #fff;
+  color: #00adcf !important;
+  background-color: #fff;
 }
 
 .navlink-contact:hover {
-    color: #191919 !important;
-    background-color: #fff;
-    border-color: #191919;
+  color: #191919 !important;
+  background-color: #fff;
+  border-color: #191919;
 }
-
 
 .navlink-language-blue {
   background-color: #fff;
   color: #00ADCF !important;
   border-color: #ffffff;
 }
-
 
 .navlink-contact-blue {
   background-color: #00ADCF;
@@ -389,15 +387,11 @@ p{
   border-color: #ffffff;
 }
 
-
-
-
 .navlink-language-black {
   background-color: #fff;
   color: #191911 !important;
   border-color: #ffffff;
 }
-
 
 .navlink-contact-black {
   background-color: #191911;
@@ -416,21 +410,124 @@ p{
   border-color: #ffffff;
 }
 
-
 @media (min-width: 768px) and (max-width: 992px) {
-  .nav-link{
-    font-size: .9rem
-    ;
+  .nav-link {
+    font-size: .9rem;
   }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .nav-link{
-    font-size: .9rem
-    ;
+  .nav-link {
+    font-size: .9rem;
   }
 }
 
+/* New CSS for the SVG Menu */
+.menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex; /* Important for centering the SVG */
+  padding: .66rem; /* Add some padding around the SVG */
+  margin-right: 1rem; /* Adjust as needed */
+  width: 3rem;  /* Set the width */
+  height: 3rem; /* Set the height */
+  padding: 0;   /* Remove any default padding that might affect sizing */
+  display: flex; /* Ensure flexbox for centering */
+  align-items: center; /* Vertically center the SVG */
+  justify-content: center; /* Horizontally center the SVG */
+  outline: none !important;
+  
+}
+
+.navbar .menu { /* Menu button inside the navbar */
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+.navbar .menu:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+/* OR, even more specific if necessary */
+#navbar .menu { /* Menu button inside the navbar with ID "navbar" */
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+#navbar .menu:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+
+.menu svg {
+  width: 100%;  /* Make the SVG fill the button */
+  height: 100%; /* Make the SVG fill the button */
+}
+
+.toggler-black{
+  stroke: black;
+}
+
+.toggler-white{
+  stroke: white;
+}
+
+
+.line {
+  fill: none;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+/* Hide the default Bootstrap toggler icon */
+.navbar-toggler-icon {
+  display: none;
+}
+
+/* Optional: Adjust the positioning of the SVG menu on smaller screens */
+@media (max-width: 767.98px) {
+  .menu {
+    /* Example: */
+    margin-right: 0;
+  }
+}
 
 /* -------------COMMON PAGES-------------- */
 
