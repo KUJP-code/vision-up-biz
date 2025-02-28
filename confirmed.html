@@ -11,12 +11,8 @@
   
     function redirect() {
       const language = getLanguage();
-      if (language.startsWith('ja')) {
-        window.location.href = '/confirmed.html';
-      } else if (language.startsWith('en')) {
+      if (language.startsWith('en')) {
         window.location.href = '/en/confirmed.html';
-      } else {
-        window.location.href = '/confirmed.html';
       }
     }
     redirect(); // Immediately call the redirect function
