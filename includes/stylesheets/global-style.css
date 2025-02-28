@@ -264,6 +264,10 @@ p{
   background-color: white;
 }
 
+.navbar-nav .nav-link {
+  font-size: 1rem; /* Or whatever size you prefer */
+}
+
 .navbar-blue {
   background-color: #00ADCF;
 }
@@ -1123,7 +1127,7 @@ height: fit-content;
   }
 }
 
-
+ /*
 @media (min-width: 1024px) and (max-width: 1260px) {
   html:lang(ja) .nav-link {
     font-size: 0.7rem;
@@ -1141,6 +1145,7 @@ height: fit-content;
     font-size: 0.9rem;
   }
 }
+  */
 html:lang(en) p {
   letter-spacing: 0;
   line-height: 1.5;
