@@ -261,7 +261,7 @@ p{
 
 /* ----------NAVBAR----------------- */
 .navbar {
-  background-color: white;
+  background-color: #f6f9fc;
 }
 
 .navbar-nav .nav-link {
@@ -379,11 +379,11 @@ p{
 
 .navlink-contact {
   margin-left: auto;
-  background-color: white;
+  background-color: #f6f9fc;
   color: #191919;
   border-style: solid;
   border-width: 0.25rem;
-  border-color: white;
+  border-color: #f6f9fc;
   border-radius: 0.25rem 0px 0px 0.25rem;
   margin-left: 0.3125rem !important;
   margin-right: 0px !important;
@@ -393,12 +393,12 @@ p{
 
 .navlink-language:hover {
   color: #00adcf !important;
-  background-color: #fff;
+  background-color: #f6f9fc;
 }
 
 .navlink-contact:hover {
   color: #191919 !important;
-  background-color: #fff;
+  background-color: #f6f9fc;
   border-color: #191919;
 }
 
