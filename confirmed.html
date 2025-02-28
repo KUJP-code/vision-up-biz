@@ -1,5 +1,26 @@
 <html lang="ja">
 <head>
+  <script>
+    function getLanguage() {
+      if (navigator.languages && navigator.languages.length) {
+        return navigator.languages[0];
+      } else {
+        return navigator.userLanguage || navigator.language || navigator.browserLanguage || 'en';
+      }
+    }
+  
+    function redirect() {
+      const language = getLanguage();
+      if (language.startsWith('ja')) {
+        window.location.href = '/confirmed.html';
+      } else if (language.startsWith('en')) {
+        window.location.href = '/en/confirmed.html';
+      } else {
+        window.location.href = '/confirmed.html';
+      }
+    }
+    redirect(); // Immediately call the redirect function
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>
