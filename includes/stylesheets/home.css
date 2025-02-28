@@ -979,6 +979,7 @@ font-size: 1rem;
 
   .success-container{
     margin-bottom: 2rem;
+
   }
 
   .success-h2{
@@ -1058,6 +1059,12 @@ font-size: 1rem;
 
   }
 
+  @media (min-width: 0px) and (max-width: 575.98px) {
+    .success-container{
+     margin-top: 2rem;
+  
+    }
+  }
 
   /* --------------------FAQ ACCORDION--------------------------*/
 

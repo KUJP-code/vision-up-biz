@@ -865,6 +865,11 @@ border-radius: .25rem;
 @media (min-width: 0px) and (max-width: 575.98px) {
 
 
+  .footer-link{
+    font-size: .8rem;
+  }
+  
+
   .footer-strapline {
     font-size:  2rem;
     text-align: center;
@@ -990,7 +995,7 @@ line-height: 2rem;
 
 @media (min-width: 0px) and (max-width: 357.98px) {
 .footer-link{
-  font-size: .8rem;
+  font-size: .55rem;
 }
 
 
