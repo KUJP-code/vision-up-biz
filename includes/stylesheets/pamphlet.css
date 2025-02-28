@@ -1,0 +1,39 @@
+
+
+
+.service-btn{
+  background-color: #ffffff;
+  color:  #00ADCF;
+  border-color: #00ADCF;
+  display: block;
+  margin-left: 0;
+  margin-right: auto;
+  width: fit-content;
+
+}
+
+
+.service-btn:hover{
+  background-color: #00ADCF;
+  color:  #fff;
+  border-color: #00ADCF;
+
+}
+
+.service-img{
+  position: relative;
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.pamphlet-infowrapper-outer{
+  display: flex;
+  align-items: center; /* Vertically centers the inner div */
+}
+
+@media (min-width: 0px) and (max-width: 575.98px) {
+  .service-btn{
+    margin-left: auto;
+  }
+}
