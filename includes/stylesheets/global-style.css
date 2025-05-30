@@ -784,12 +784,20 @@ p{
 
 
 .footer-address {
+  text-decoration: none;
   font-size: .75rem;
   color: white;
   line-height: 1.5;
   display: block;
   text-align: right;
+  transition: ease-in-out .2s;
 }
+
+.footer-address:hover {
+  color: #00ADCF;
+  transition: ease-in-out .2s;
+}
+
 
 
 .address-col-1{
