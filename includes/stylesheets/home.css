@@ -1141,13 +1141,15 @@ font-size: 1rem;
 .accordion-btn-icon {
   transition: transform 0.3s ease-in-out, stroke 0.3s ease-in-out;
   width: 2.5rem; /* Start with a smaller, more reasonable size */
-  height: 2.5rem;
+  height: auto;
   margin-right: 1rem; /* Adjust as needed */
   flex-shrink: 0; /* Prevent icon from shrinking */
   display: inline-flex; /* Use flexbox for alignment */
   align-items: center; /* Vertically center the icon */
   justify-content: center; /* Horizontally center the icon */
-  padding: .2rem;
+  margin: .2rem;
+  margin-right: 1rem;
+
 }
 
 /* SVG Styles (inside the icon) */
@@ -1228,8 +1230,9 @@ font-size: 1rem;
 
   .accordion-btn-icon {
     width: 2.75rem; /* Slightly larger icon on mobile */
-    height: 2.75rem;
-    margin-right: 0.75rem; /* Adjust margin */
+height: auto;
+  margin: .2rem;
+  margin-right: 1rem;
   }
 
   .accordion-body {
