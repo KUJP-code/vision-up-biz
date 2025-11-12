@@ -1,12 +1,11 @@
-/* NAV AREA */
 body {
     font-family: "M PLUS 1p", sans-serif;
-    font-weight: 400;
     color: #191919;
     line-height: 1.7;
     font-size: 1rem;
-    padding-top: 72px;
+    padding-top: 68px;
 }
+
 .join-navbar {
     position: fixed;
     top: 0;
@@ -24,23 +23,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.75rem 0;
-}
-
-.join-navbar-logo-link {
-    display: inline-flex;
-    align-items: center;
+    padding: 0.6rem 0;
 }
 
 .join-navbar-logo {
-    height: 1.75rem;
+    height: 1.9rem;
     width: auto;
 }
 
 .join-navbar-links {
     display: flex;
-    align-items: center;
-    gap: 1.5rem;
+    align-items: flex-end;
+    gap: 1.8rem;
 }
 
 .join-navbar-link {
@@ -48,47 +42,34 @@ body {
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    transition: transform 0.2s ease;
-}
-
-.join-navbar-link:hover {
-    transform: translateY(-2px);
+    color: #00adcf;
+    font-weight: 600;
+    font-size: 0.8rem;
+    transition: color 0.25s ease;
 }
 
 .join-navbar-icon {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 999px;
-    border: 2px solid #00adcf;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-    margin-bottom: 0.25rem;
-    transition: background-color 0.2s ease;
-}
-
-.join-navbar-icon svg {
-    width: 1.6rem;
-    height: 1.6rem;
-    stroke: #00adcf;
-    fill: none;
-    stroke-width: 2;
+    width: 1.7rem;
+    height: 1.7rem;
+    margin-bottom: 0.3rem;
+    filter: brightness(0) saturate(100%) invert(48%) sepia(71%) saturate(1791%)
+        hue-rotate(155deg) brightness(92%) contrast(91%);
+    transition:
+        filter 0.25s ease,
+        background-color 0.25s ease;
 }
 
 .join-navbar-link:hover .join-navbar-icon {
-    background-color: #00adcf;
+    filter: drop-shadow(0 0 4px rgba(0, 173, 207, 0.4));
 }
 
-.join-navbar-link:hover .join-navbar-icon svg {
-    stroke: #fff;
+.join-navbar-link:hover {
+    color: #008aa7;
 }
 
 .join-navbar-label {
     font-size: 0.8rem;
-    letter-spacing: 0.08em;
-    color: #00adcf;
-    font-weight: 500;
+    line-height: 1;
 }
 
 /* HERO AREA */
