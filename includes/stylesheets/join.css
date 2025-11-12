@@ -514,7 +514,6 @@ body {
     display: flex;
     align-items: center;
     gap: 1.5rem;
-    margin-bottom: 1.5rem;
 }
 
 .kodawari-icon {
@@ -531,7 +530,7 @@ body {
 }
 
 .kodawari-text {
-    font-size: 1rem;
+    font-size: 0.95rem;
     color: #191919;
 }
 
@@ -542,7 +541,7 @@ body {
 
 .kodawari-graph-wrap {
     text-align: center;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 
 .kodawari-graph {
