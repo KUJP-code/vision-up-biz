@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>資料請求 | VISION UP</title>
+        <meta
+            name="description"
+            content="VISION UPへの資料請求はこちらから。必要事項をご記入の上、送信ボタンを押してください。"
+        />
+        <link
+            rel="icon"
+            href="/includes/images/global/favicon.svg"
+            type="image/svg+xml"
+        />
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;400;500;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/includes/stylesheets/global-style.css" />
+        <link rel="stylesheet" href="/includes/stylesheets/join.css" />
+    </head>
+    <body>
+        <!-- NAV -->
+        <div w3-include-html="/includes/navbars/navbar-join.html"></div>
+
+        <!-- HERO -->
+        <div class="hero-outer-common hero-blue">
+            <div class="hero-inner-common">
+                <h1 style="color: #fff">
+                    資料請求<span class="period-detail-white">.</span>
+                </h1>
+                <p style="color: #fff">
+                    必要事項をご記入の上、送信ボタンを押してください。
+                </p>
+            </div>
+        </div>
+
+        <section class="join-request">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-9">
+                        <form
+                            action="https://vision-up.app/inquiries"
+                            method="post"
+                            class="join-form"
+                        >
+                            <input
+                                type="hidden"
+                                name="inquiry[category]"
+                                value="join"
+                            />
+
+                            <div class="jf-group">
+                                <label for="jf_name" class="jf-label"
+                                    ><span class="req-badge">必須</span>
+                                    お名前</label
+                                >
+                                <input
+                                    id="jf_name"
+                                    name="inquiry[name]"
+                                    type="text"
+                                    required
+                                    class="jf-input"
+                                    placeholder="山田 太郎"
+                                />
+                            </div>
+
+                            <div class="jf-group">
+                                <label for="jf_org" class="jf-label"
+                                    >法人名</label
+                                >
+                                <input
+                                    id="jf_org"
+                                    name="inquiry[org]"
+                                    type="text"
+                                    class="jf-input"
+                                    placeholder="株式会社ABC"
+                                />
+                            </div>
+
+                            <div class="jf-group">
+                                <label for="jf_postal" class="jf-label"
+                                    ><span class="req-badge">必須</span>
+                                    郵便番号</label
+                                >
+                                <div class="jf-input-icon-row">
+                                    <span class="jf-input-icon">〒</span>
+                                    <input
+                                        id="jf_postal"
+                                        name="inquiry[postal_code]"
+                                        inputmode="numeric"
+                                        pattern="[0-9]{7}"
+                                        required
+                                        class="jf-input flex-1"
+                                        placeholder="0123456　※ハイフンなし"
+                                    />
+                                </div>
+                            </div>
+
+                            <div class="jf-group">
+                                <label class="jf-label">住所</label>
+                                <div class="row g-2">
+                                    <div class="col-12 col-md-4">
+                                        <select
+                                            id="jf_pref"
+                                            name="inquiry[address_pref]"
+                                            class="jf-input"
+                                        >
+                                            <option value="">
+                                                都道府県名を選択
+                                            </option>
+                                            <option>北海道</option>
+                                            <option>青森県</option>
+                                            <option>岩手県</option>
+                                            <option>宮城県</option>
+                                            <option>秋田県</option>
+                                            <option>山形県</option>
+                                            <option>福島県</option>
+                                            <option>茨城県</option>
+                                            <option>栃木県</option>
+                                            <option>群馬県</option>
+                                            <option>埼玉県</option>
+                                            <option>千葉県</option>
+                                            <option>東京都</option>
+                                            <option>神奈川県</option>
+                                            <option>新潟県</option>
+                                            <option>富山県</option>
+                                            <option>石川県</option>
+                                            <option>福井県</option>
+                                            <option>山梨県</option>
+                                            <option>長野県</option>
+                                            <option>岐阜県</option>
+                                            <option>静岡県</option>
+                                            <option>愛知県</option>
+                                            <option>三重県</option>
+                                            <option>滋賀県</option>
+                                            <option>京都府</option>
+                                            <option>大阪府</option>
+                                            <option>兵庫県</option>
+                                            <option>奈良県</option>
+                                            <option>和歌山県</option>
+                                            <option>鳥取県</option>
+                                            <option>島根県</option>
+                                            <option>岡山県</option>
+                                            <option>広島県</option>
+                                            <option>山口県</option>
+                                            <option>徳島県</option>
+                                            <option>香川県</option>
+                                            <option>愛媛県</option>
+                                            <option>高知県</option>
+                                            <option>福岡県</option>
+                                            <option>佐賀県</option>
+                                            <option>長崎県</option>
+                                            <option>熊本県</option>
+                                            <option>大分県</option>
+                                            <option>宮崎県</option>
+                                            <option>鹿児島県</option>
+                                            <option>沖縄県</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <input
+                                            id="jf_city"
+                                            name="inquiry[address_city]"
+                                            type="text"
+                                            class="jf-input"
+                                            placeholder="千代田区六番町"
+                                        />
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <input
+                                            id="jf_line"
+                                            name="inquiry[address_line]"
+                                            type="text"
+                                            class="jf-input"
+                                            placeholder="10-2　市川ビル1階　101号"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="jf-note jf-note-red">
+                                    ※住所は2つに分けてご記入ください。マンション名は必ず記入してください。
+                                </div>
+                            </div>
+
+                            <div class="jf-group">
+                                <label for="jf_phone" class="jf-label"
+                                    ><span class="req-badge">必須</span>
+                                    電話番号</label
+                                >
+                                <input
+                                    id="jf_phone"
+                                    name="inquiry[phone]"
+                                    type="tel"
+                                    inputmode="numeric"
+                                    pattern="[0-9\-]+"
+                                    required
+                                    class="jf-input"
+                                    placeholder="0312345678　※ハイフンなし"
+                                />
+                            </div>
+
+                            <div class="jf-group">
+                                <label for="jf_email" class="jf-label"
+                                    ><span class="req-badge">必須</span>
+                                    メールアドレス</label
+                                >
+                                <input
+                                    id="jf_email"
+                                    name="inquiry[email]"
+                                    type="email"
+                                    required
+                                    class="jf-input"
+                                    placeholder="info@abcdefg.com"
+                                />
+                            </div>
+
+                            <div class="jf-group">
+                                <div class="jf-label">
+                                    <span class="req-badge">必須</span> 性別
+                                </div>
+                                <div class="jf-radio-row">
+                                    <label class="jf-radio"
+                                        ><input
+                                            type="radio"
+                                            name="inquiry[gender]"
+                                            value="male"
+                                            required
+                                        /><span>男性</span></label
+                                    >
+                                    <label class="jf-radio"
+                                        ><input
+                                            type="radio"
+                                            name="inquiry[gender]"
+                                            value="female"
+                                            required
+                                        /><span>女性</span></label
+                                    >
+                                </div>
+                            </div>
+
+                            <div class="jf-group">
+                                <label for="jf_age" class="jf-label"
+                                    ><span class="req-badge">必須</span>
+                                    年齢</label
+                                >
+                                <div class="jf-inline-after w-50">
+                                    <input
+                                        id="jf_age"
+                                        name="inquiry[age]"
+                                        type="number"
+                                        min="0"
+                                        max="120"
+                                        required
+                                        class="jf-input"
+                                    />
+                                    <span class="jf-suffix">歳</span>
+                                </div>
+                            </div>
+
+                            <div class="jf-group">
+                                <label for="jf_msg" class="jf-label"
+                                    >ご質問等</label
+                                >
+                                <textarea
+                                    id="jf_msg"
+                                    name="inquiry[message]"
+                                    rows="6"
+                                    class="jf-input"
+                                ></textarea>
+                            </div>
+
+                            <div class="jf-group">
+                                <label class="jf-privacy">
+                                    <input
+                                        type="checkbox"
+                                        name="privacy_agreement"
+                                        required
+                                    />
+                                    「<a
+                                        href="https://www.p-up.world/privacypolicy/"
+                                        target="_blank"
+                                        rel="noopener"
+                                        >プライバシーポリシー</a
+                                    >」をご確認頂き、ご同意の上で送信を行ってください。
+                                </label>
+                            </div>
+
+                            <div class="jf-actions">
+                                <button type="submit" class="btn-red-blacktext">
+                                    送　　信
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <div w3-include-html="/includes/footers/footer-ja.html"></div>
+
+        <!-- JS -->
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
+        <script>
+            w3.includeHTML();
+        </script>
+        <script src="/includes/javascript/global.js"></script>
+    </body>
+</html>
