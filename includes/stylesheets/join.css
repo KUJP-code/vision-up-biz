@@ -1366,3 +1366,40 @@ body {
         width: 100%;
     }
 }
+
+.footer-simple {
+    padding: 2rem 0;
+    background-color: #00adcf;
+    text-align: center;
+}
+
+.footer-simple-inner {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-logo {
+    height: 100px;
+    width: auto;
+    max-width: 100%;
+}
+
+.footer-copyright {
+    font-size: 0.9rem;
+    color: #fff;
+    text-align: center;
+    padding-top: 2rem;
+}
+.footer-top {
+    background-color: #00adcf !important;
+}
+
+.footer-wrapper {
+    background-color: #00adcf !important;
+}
+@media (max-width: 768px) {
+    .footer-logo {
+        height: 48px;
+    }
+}
