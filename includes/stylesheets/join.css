@@ -167,8 +167,8 @@ body {
 .join-hero-bubble.bubble-3 {
     width: 15rem;
     height: 15rem;
-    top: 28rem;
-    right: 12rem;
+    top: 25rem;
+    right: 26rem;
     animation-delay: 12s;
     z-index: 1;
 }
@@ -258,10 +258,10 @@ body {
     }
 
     .join-hero-bubble.bubble-1 {
-        width: 12rem;
-        height: 12rem;
-        top: -3rem;
-        right: -8rem;
+        width: 11rem;
+        height: 11rem;
+        top: 0rem;
+        right: -6rem;
     }
     .join-hero-bubble.bubble-2 {
         width: 9rem;
