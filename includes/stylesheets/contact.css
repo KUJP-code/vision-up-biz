@@ -1,126 +1,168 @@
 /* ----------FOOTER----------------- */
 
-.form-row{
+.form-row {
     padding-top: 0rem;
-  }
-  
-  .form-col{
+}
+
+.form-col {
     background-color: #f3f3f3;
     padding: 2rem;
     border-radius: 2rem;
-    margin-right: .5%;
+    margin-right: 0.5%;
     width: 49.5%;
-  }
-  
-  .form-row-picture{
+}
+
+.form-row-picture {
     padding: 2rem;
     border-radius: 2rem;
     background-image: url(/includes/images/contact/contact.webp);
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-left: .5%;
+    margin-left: 0.5%;
     width: 49.5%;
-  }
-  
-  .form-wrapper{
+}
+
+.form-wrapper {
     width: fit-content;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-  
-  }
-  
-  .form-label{
+}
+
+.form-label {
     font-size: 1.2rem;
     padding-top: 2rem;
     display: block;
     margin-bottom: -1rem;
     font-weight: normal;
-  
-  }
-  
-  .form-input{
+}
+
+.form-input {
     box-shadow: none !important;
     border-style: solid !important;
-    border-color: #DDDDDD ;
+    border-color: #dddddd;
     width: 100%;
     display: block;
     margin-right: auto;
     line-height: 1.5rem;
-    padding: .25rem;
-    border-radius: .25rem;
-  
-  }
-  
-  .form-mandatory-txt{
-    font-size: .8rem;
-    color:  #949494 ;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+}
+
+.form-mandatory-txt {
+    font-size: 0.8rem;
+    color: #949494;
     margin-top: -1rem;
-  }
-  
-  .form-btn{
-  background-color: #ffffff00;
-  color: rgb(0, 0, 0);
-  border-color: #000000;
-  transition: ease-in-out .3s;
-  text-align: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  
-  padding-left: 3rem;
-  padding-right: 3rem;
-  
-  }
-  
-  .form-btn:hover{
+}
+
+.form-btn {
+    background-color: #ffffff00;
+    color: rgb(0, 0, 0);
+    border-color: #000000;
+    transition: ease-in-out 0.3s;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.form-btn:hover {
     background-color: white;
     color: #00adcf;
     border-color: #00adcf;
-  }
-  
-  .confirmation-wrapper{
+}
+
+.confirmation-wrapper {
     height: 60vh;
-  }
-  
-  
-  .confirmation{
+}
+
+.confirmation {
     margin: 0;
     position: relative;
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-  }
-  
-  @media (min-width: 0px) and (max-width: 575.98px) {
-  
-    .form-row{
-      padding-top: 1rem;
+}
+
+@media (min-width: 0px) and (max-width: 575.98px) {
+    .form-row {
+        padding-top: 1rem;
     }
-  
-    .form-col{
-      width: 100%;
+
+    .form-col {
+        width: 100%;
     }
-  
-    .form-wrapper{
-      width: 90%;
+
+    .form-wrapper {
+        width: 90%;
     }
-  
-  
-    .form-input{
-      width: 100%;
+
+    .form-input {
+        width: 100%;
     }
-  
-    .form-label{
-   padding-left: 0%;
+
+    .form-label {
+        padding-left: 0%;
     }
-  
-  
-    .form-btn{
-      margin-left: 0%;
+
+    .form-btn {
+        margin-left: 0%;
     }
-  }
-  
-  
+}
+
+/* random styles for join-contact */
+
+.confirmation-text-main {
+    color: #000;
+    font-size: 1.15rem;
+    font-weight: 400;
+    line-height: 1.9;
+    margin-bottom: 0.8rem;
+}
+
+.confirmation-text-sub {
+    color: #222;
+    font-size: 1.05rem;
+    font-weight: 400;
+    line-height: 1.8;
+    margin-bottom: 1.8rem;
+}
+
+.confirmation-btn {
+    min-width: 200px;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.7rem 2rem;
+}
+
+.confirmation-btn.btn-main {
+    background-color: #00adcf;
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1.75rem;
+    border-radius: 0.5rem;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition:
+        background 0.2s ease,
+        transform 0.15s ease;
+}
+
+.confirmation-btn.btn-main:hover {
+    background-color: #008fb0;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 576px) {
+    .confirmation-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
