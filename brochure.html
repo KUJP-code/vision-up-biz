@@ -1,38 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KC9KJXHM');</script>
-<!-- End Google Tag Manager -->
->
-<title>Language Redirect</title>
-<script>
-  function getLanguage() {
-    if (navigator.languages && navigator.languages.length) {
-      return navigator.languages[0];
-    } else {
-      return navigator.userLanguage || navigator.language || navigator.browserLanguage || 'en';
-    }
-  }
+    <head>
+        <!-- Google Tag Manager -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    "gtm.start": new Date().getTime(),
+                    event: "gtm.js",
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "dataLayer", "GTM-KC9KJXHM");
+        </script>
+        <!-- end GTM -->
+        >
+        <title>Language Redirect</title>
+        <script>
+            function getLanguage() {
+                if (navigator.languages && navigator.languages.length) {
+                    return navigator.languages[0];
+                } else {
+                    return (
+                        navigator.userLanguage ||
+                        navigator.language ||
+                        navigator.browserLanguage ||
+                        "en"
+                    );
+                }
+            }
 
-  function redirect() {
-    const language = getLanguage();
-    if (language.startsWith('ja')) {
-      window.location.href = '/pamphlet.html';
-    } else if (language.startsWith('en')) {
-      window.location.href = '/en/pamphlet.html';
-    } else {
-      window.location.href = '/pamphlet.html';
-    }
-  }
-  redirect(); // Immediately call the redirect function
-</script>
-</head>
-<body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KC9KJXHM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
-
-</body>
+            function redirect() {
+                const language = getLanguage();
+                if (language.startsWith("ja")) {
+                    window.location.href = "/pamphlet.html";
+                } else if (language.startsWith("en")) {
+                    window.location.href = "/en/pamphlet.html";
+                } else {
+                    window.location.href = "/pamphlet.html";
+                }
+            }
+            redirect(); // Immediately call the redirect function
+        </script>
+    </head>
+    <body>
+        <!-- gtm (noscript) -->
+        <noscript
+            ><iframe
+                src="https://www.googletagmanager.com/ns.html?id=GTM-KC9KJXHM"
+                height="0"
+                width="0"
+                style="display: none; visibility: hidden"
+            ></iframe
+        ></noscript>
+        <!-- end gtm (noscript) -->
+    </body>
 </html>
