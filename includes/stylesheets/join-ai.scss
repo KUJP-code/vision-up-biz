@@ -1,0 +1,1231 @@
+// ==========================================
+// Variables
+// ==========================================
+$color-text: #191919;
+$color-primary: #00adcf;
+$color-primary-hover: #008aa7;
+$color-primary-light: #80d6e4;
+$color-red: #e14b4b;
+$color-red-hover: #c63f3f;
+$color-white: #ffffff;
+$color-bg-light: #f5f5f5;
+$color-border: #e0e0e0;
+$color-placeholder: #9aa1a8;
+
+
+$yellow-highlight: #fae900;
+$blue-highlight: #00abce;
+$vision-light-gray: #e4e4e4;
+
+$table-traditional-dark-gray: #e5e6e6;
+$table-traditional-light-gray: #f2f2f3;
+$table-traditional-light-red: #e1d0ca;
+$table-traditional-dark-red: #a9615b;
+
+$table-vision-dark-blue: #aeddeb;
+$table-vision-light-blue: #d7edf5;
+$table-vision-text-blue: #2970b8;
+
+$model-blue: #afddeb;
+$model-light-blue: #d7edf5;
+
+$model-yellow: #ffe0a0;
+$model-light-yellow: #ffefd0;
+
+$model-green: #b2d896;
+$model-light-green: #d9ebc4;
+
+$model-pink: #eab0bb;
+$model-light-pink: #f4d7de;
+
+
+@mixin text-stroke($stroke-width, $stroke-color, $fill-color) {
+  position: relative;
+  display: inline-block;
+  color: $fill-color;
+  -webkit-text-stroke: $stroke-width $stroke-color;
+
+  &::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    color: transparent;
+    -webkit-text-stroke: $stroke-width $stroke-color;
+  }
+}
+
+
+// ==========================================
+// Base Styles
+// ==========================================
+body {
+    font-family: "M PLUS 1p", sans-serif;
+    color: $color-text;
+    line-height: 1.7;
+    font-size: 1rem;
+    padding-top: 55px;
+}
+
+// ==========================================
+// Navigation
+// ==========================================
+.join-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+
+    &-inner {
+        width: 90%;
+        max-width: 1440px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.6rem 0;
+    }
+
+    &-logo {
+        height: 1.9rem;
+        width: auto;
+    }
+
+    &-links {
+        display: flex;
+        align-items: flex-end;
+        gap: 1.8rem;
+    }
+
+    &-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        color: $color-primary;
+        font-weight: 600;
+        font-size: 0.8rem;
+        transition: color 0.25s ease;
+
+        &:hover {
+            color: $color-primary-hover;
+
+            .join-navbar-icon {
+                filter: drop-shadow(0 0 4px rgba(0, 173, 207, 0.4));
+            }
+        }
+    }
+
+    &-icon {
+        width: 1.7rem;
+        height: 1.7rem;
+        margin-bottom: 0.3rem;
+        filter: brightness(0) saturate(100%) invert(48%) sepia(71%) saturate(1791%) hue-rotate(155deg) brightness(92%) contrast(91%);
+        transition: filter 0.25s ease, background-color 0.25s ease;
+    }
+
+    &-label {
+        font-size: 0.8rem;
+        line-height: 1;
+    }
+}
+
+
+
+// ==========================================
+// Reusable Headings & Elements
+// ==========================================
+.hybrid-school {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.section-title {
+    &-blue {
+        display: flex;
+        align-items: stretch;
+        gap: 1.5rem;
+        font-weight: 800;
+        font-size: clamp(1.75rem, 2vw, 2.25rem);
+        color: $color-primary;
+        margin-bottom: 1rem;
+
+        &::before {
+            content: "";
+            width: 0.5rem;
+            background-color: $color-primary;
+            border-radius: 2px;
+        }
+    }
+
+    &-red {
+        display: flex;
+        align-items: stretch;
+        gap: 0.75rem;
+        font-weight: 800;
+        font-size: clamp(1.75rem, 2vw, 2.25rem);
+        color: $color-red;
+
+        &::before {
+            content: "";
+            width: 0.5rem;
+            background-color: $color-red;
+            border-radius: 2px;
+        }
+    }
+}
+
+.hybrid-image {
+    border-radius: 0.75rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    max-width: 100%;
+    height: auto;
+}
+
+.right-box {
+    background-color: $color-primary-light;
+}
+
+
+.highlight-yellow{
+    color: $yellow-highlight;
+    font-weight: bolder;
+}
+
+.highlight-blue{
+    color: $blue-highlight;
+    font-weight: bolder;
+}
+
+
+
+    .mobile-break{
+        display: none;
+
+    @media (max-width: 576.98px) {
+        display: unset;
+    }
+    }
+
+    .desktop-break{
+        display: block;
+
+    @media (max-width: 767.98px) {
+        display: none;
+    }
+    }
+
+
+// ==========================================
+// Hero Area
+// ==========================================
+
+
+.hero{
+    background-image: url(/includes/images/ai-landing/hero/ai-landing-hero-desktop.jpg);
+    height: calc(100vh - 120px);
+    max-height: 1080px;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media (max-width: 576.98px) {
+
+    }
+
+
+
+
+    .top-text{
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+        padding-top: 1rem;
+
+    
+    h1{
+        text-align: center;
+        margin-bottom: 0;
+        font-size: 3.75rem;
+        text-align: center;
+        @include text-stroke(1px, $color-text, white);
+
+        @media (max-width: 1199.98px) {
+            font-size: 3.2rem;
+        }
+
+           @media (max-width: 991.98px) {
+            font-size: 2.5rem;
+        }
+
+        @media (max-width: 767.98px) {
+            font-size: 2.75rem;
+        }
+
+
+        @media (max-width: 374.98px) {
+            font-size: 2.3rem;
+        }
+    }
+
+    h2{
+        text-align: center;
+        color: $color-text;
+        line-height: 1.25;
+        color: white;
+        font-size: 2.25rem;
+
+        @media (max-width: 1199.98px) {
+            font-size: 2rem;
+        }
+        
+        @media (max-width: 991.98px) {
+            font-size: 1.75rem;
+        }
+
+              @media (max-width: 419.98px) {
+            font-size: 1.5rem;
+        }
+
+            @media (max-width: 359.98px) {
+            font-size: 1.3rem;
+        }
+    }
+
+    .top-h2{
+        @include text-stroke(1px, $color-text, white);
+    }
+}
+
+.highlight-blue{
+          @include text-stroke(1px, white, $blue-highlight);
+}
+
+        
+
+    .text-contents{
+        height: fit-content;
+        width: 100%;
+        margin-top: auto;
+        margin-bottom: 0;
+       position: relative;
+       background-image: url(/includes/images/ai-landing/hero/hero-textbox-background.svg);
+       background-size: cover;
+       background-position: top center;
+
+       padding-top: 4.6875%;
+
+    .container {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        h2{
+            text-align: center;
+
+                  @media (max-width: 1199.98px) {
+            font-size: 2rem;
+        }
+        }
+
+    }
+    }
+}
+
+
+// ==========================================
+// Extra Vocation
+// ==========================================
+
+.extravocation{
+padding-top: 4rem;
+
+.top-3-box{
+        padding-bottom: 4rem;
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+
+    .info-box{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 50%;
+        justify-content: space-between;
+
+
+        .text-wrapper{
+        display: flex;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+
+        h3, h4, p{
+            text-align: center;
+            line-height: 1;
+            padding: .25rem;
+        }
+
+        }
+
+        .row{
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            justify-content: space-evenly;
+            
+            .row-box{
+                width: calc(100% / 3 - 1rem);
+                display: flex;
+                img{
+                    width: 100%;
+                    margin: auto;
+                }
+            }
+        }
+    }
+    @media (max-width: 767.98px) {
+        flex-direction: column;
+
+        .info-box{
+            width: 100%;
+        }
+    }
+
+}
+
+.banner-wrapper{
+background-color: $vision-light-gray;
+h2{
+    color: $color-text;
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+}
+}
+
+// ==========================================
+// AI Points
+// ==========================================
+
+.ai-points{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    h2{
+        color: $color-text;
+        text-align: center;
+    }
+
+    .three-points-row{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        padding-top: 2rem;
+        
+        
+        .point-1, .point-2, .point-3{
+            width: 33%;
+            padding: 2rem;
+            border-radius: 2rem;
+            display: flex;
+            flex-direction: column;
+
+            h3{
+                font-size: 1.5rem;
+                line-height: 1.25;
+            }
+
+            img{
+                width: 12rem;
+                padding: 1rem;
+                margin: auto;
+            }
+            h4{
+                text-align: center;
+                font-weight: bold;
+                font-size: 1.25rem;
+            }
+        }
+
+        .point-1{
+            background-color: #b7dce9;
+        }
+
+        .point-2{
+            background-color: #fbe2a8;
+        }
+
+        .point-3{
+            background-color: #e3b3bc;
+        }
+
+            @media (max-width: 767.98px) {
+                flex-direction: column;
+                gap: 2rem;
+                    .point-1, .point-2, .point-3{
+                        width: 100%;
+                    }
+            }
+    }
+}
+
+
+// ==========================================
+// Chart
+// ==========================================
+
+.ai-comparison{
+
+.container{
+
+h2{
+    color: $color-text;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+
+
+// 1. The Mobile Scrolling Wrapper
+// Make sure to wrap your <table> in <div class="table-responsive-wrapper">
+.table-responsive-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 2rem;
+
+
+  @media (max-width: 767.98px) {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+}
+
+// 2. The Table Styles
+// The Table Styles
+.comparison-table {
+  width: 100%; 
+  table-layout: fixed; 
+  border-collapse: separate; // 1. Must be separate for border-radius to work
+  border-spacing: 0;         // 2. Removes all gaps between cells
+  text-align: center;
+  
+  // Mobile spacing & scroll trigger
+  @media (max-width: 767.98px) {
+    min-width: 385px; 
+  }
+
+  th, td {
+    padding: 1rem;
+    vertical-align: middle;
+    // Removed global border and border-radius so inner cells sit perfectly flush
+    
+    @media (max-width: 767.98px) {
+      padding: 0.75rem 0.5rem;
+    }
+  }
+
+  // Headers
+  th {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    @media (max-width: 767.98px) {
+      font-size: 1rem;
+    }
+
+    &.empty-cell {
+      width: 15%; 
+      background-color: transparent;
+      border: none; 
+          @media (max-width: 767.98px) {
+            width: 8%;
+          }
+    }
+
+    &.header-traditional {
+      width: 42.5%; 
+      background-color: $vision-light-gray;
+      color: $color-text;
+
+      border: solid 2px $table-traditional-dark-gray;
+      border-bottom: none; // Prevents double border
+
+        @media (max-width: 767.98px) {
+            width: 46%;
+        }
+    }
+
+    &.header-vision-up {
+      width: 45%; 
+      background-color: $table-vision-dark-blue;
+    
+      border: solid 2px $table-vision-dark-blue;
+
+      color: $color-text;
+      border-bottom: none; // Prevents double border
+
+             @media (max-width: 767.98px) {
+            width: 46%;
+        }
+    }
+  }
+
+  // Left Column (Row Headers)
+  .row-header {
+    background-color: $table-traditional-light-gray;
+    font-weight: bold;
+    font-size: 1.25rem;
+    border: solid 2px $table-traditional-dark-gray;
+    border-bottom: none; // Prevents double border
+    border-right: none;  // Prevents clashing with column 2
+    padding: 0!important;
+    
+    @media (max-width: 767.98px) {
+      font-size: 0.9rem;
+      writing-mode: vertical-rl;
+  
+      
+    
+    }
+  }
+
+  // Corner Header Utilities
+  .border-radius-top-left{
+    border-radius: 1rem 0rem 0rem 0rem;
+  }
+
+    .border-radius-top-right{
+    border-radius: 0rem 1rem 0rem 0rem;
+  }
+
+
+  .border-radius-bottom-left {
+    border-radius: 0rem 0rem 0rem 1rem;
+  }
+
+      .border-radius-bottom-right{
+    border-radius: 0rem 0rem 1rem 0rem;
+  }
+
+
+  // Column Styles (Applying the double-border fix)
+  .table-traditional {
+    border: solid 2px $table-traditional-dark-gray;
+              border-right: none;
+    background-color: $table-traditional-light-gray;
+    
+    border-bottom: none; 
+  }
+
+  .table-vision-up {
+    border: solid 2px $table-vision-dark-blue;
+    background-color: $table-vision-light-blue !important;
+    border-bottom: none; 
+  }
+
+  // Re-apply bottom border to the very last row so the table is closed at the bottom
+  tbody tr:last-child {
+    .row-header { border-bottom: solid 2px $table-traditional-dark-gray; }
+    .table-traditional { border-bottom: solid 2px $table-traditional-dark-gray; }
+    .table-vision-up { border-bottom: solid 2px $table-vision-dark-blue; }
+  }
+
+  // Badges
+
+  .badge-traditional, .badge-vision-up {
+    color: $color-text;
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+    font-weight: bold;
+    width: fit-content;
+
+    @media (max-width: 767.98px) {
+      font-size: 0.85rem;
+      padding: 0.4rem 0.5rem;
+    }
+  }
+
+  .badge-traditional { 
+    background-color: $table-traditional-light-red; 
+  } 
+  
+  .badge-vision-up { 
+    background-color: $table-vision-dark-blue; 
+  }
+  
+
+    .cost-icon{
+        height: 4.5rem;
+        margin-right: 1rem;
+    }
+  .cell-content { 
+    background-color: #f4f4f4; 
+  }
+
+
+  .cost-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .cost-icon{
+        width: 5rem;
+        margin-left: auto;
+        margin-right: 0;
+    }
+      .badge { 
+width: fit-content;
+height: fit-content;
+margin-left: 0;
+margin-right: auto;
+}
+
+    @media (max-width: 767.98px) {
+        flex-direction: column;
+
+        .cost-icon, .badge{
+            margin: auto;
+            padding: .5rem;
+        }
+    }
+
+
+  }
+
+  // Pricing
+  .price {
+    font-size: 1rem;
+    font-weight: bold;
+
+
+    .price-number{
+           font-size: 1.75rem;
+    }
+
+    .checkmark{
+        width: 1rem;
+        height: 1rem;
+        transform: translate(0, -17.5%);
+        margin-right: -.25rem;
+    }
+    
+    @media (max-width: 767.98px) {
+          .price-number{
+           font-size: 1.5rem;
+    }
+    }
+  }
+
+  .price-traditional { color: $table-traditional-dark-red; }
+  .price-vision-up { 
+    color: $table-vision-text-blue;
+ }
+
+
+ .quality-cell{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    img{
+        width:5rem;
+    }
+
+        @media (max-width: 767.98px) {
+            flex-direction: column;
+            gap: .25rem;
+        }
+
+ }
+
+  // Text utilities
+  .text-bold {
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: fit-content;
+    
+    @media (max-width: 767.98px) {
+      font-size: 1rem;
+      padding: unset;
+    }
+  }
+
+  
+
+  .text-large {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $table-vision-text-blue;
+
+    @media (max-width: 767.98px) {
+      font-size: 1.2rem;
+    }
+  }
+
+  .text-red {
+    color: $table-traditional-dark-red; 
+    font-weight: bold;
+  }
+
+  // Risk List
+  .risk-list {
+    text-align: left;
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    list-style: none; 
+    padding-left: 0;
+    
+    li {
+      margin-bottom: 0.25rem;
+      font-size: 1rem;
+      display: flex;
+      flex-direction: row;
+
+      .caution {
+        width: 1rem;
+      }
+
+      @media (max-width: 767.98px) {
+        font-size: 0.85rem;
+      }
+    }
+  }
+
+  .risk-free{
+
+  
+      .risk-free-wrapper{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        width: fit-content;
+        gap: 1rem;
+
+        img{
+            width: 4rem;
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        p{
+            margin-left: 0;
+            margin-right: auto;
+            width: fit-content;
+        }
+
+        @media (max-width: 767.98px) {
+            flex-direction: column;
+
+
+        img{
+            margin-right: auto;
+        }
+
+        p{
+            margin-left: auto;
+            padding-top: .5rem;
+            line-height: 1;
+        }
+        }
+    }
+}
+}
+}
+}
+// ==========================================
+// Merits and Mdoel
+// ==========================================
+
+.merits-and-model{
+    padding-top: 4rem;
+    .container{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+
+
+
+            @media (max-width: 767.98px) {
+                flex-direction: column;
+            }
+
+
+
+        .three-merits{
+            width: 50%;
+
+/* The gradient must come first so it sits ON TOP of the image URL */
+background-image: linear-gradient(to right, #fcfcfc 3%, transparent 25%), url(/includes/images/ai-landing/section-4/three-points-bg.webp);
+
+/* These existing properties apply to both layers */
+background-size: cover; /* Note: You might prefer 'cover' if the image squashes */
+background-repeat: no-repeat;
+border-radius: 0 3rem 3rem 0;
+
+            
+            @media (max-width: 767.98px) {
+                width: 100%;
+            }       
+
+            .merit-box{
+                background-color: rgba(255, 255, 255, 0.6);
+                border-radius: 2rem;
+                padding: 2rem;
+                width: fit-content;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+
+                h3{
+                    line-height: 1;
+                    text-align: center;
+                }
+                .merits-column{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    padding-top: 1rem;
+
+                    .merit-row{
+                        display: flex;
+                        flex-direction: row;
+                        gap: 1rem;
+          
+                        align-items: center;
+
+                        img{
+                            width: 5rem;
+                            aspect-ratio: 1/1;
+                        }
+
+
+                    }
+
+                }
+
+            }
+        }
+
+        .model{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            @media (max-width: 767.98px) {
+                width: 100%;
+            }            
+
+            .model-wrapper{
+                width: 100%;
+             
+            .model-box-row{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                gap: 0.25rem;
+                margin: unset;
+                @media (max-width: 767.98px) {
+                    gap: 1rem;
+                }
+
+                .item-wrapper{
+                    width: 25%;
+                    border: solid 3px $color-text;
+                    display: flex;
+                    flex-direction: column;
+                    border-radius: 1rem;
+                    overflow: hidden;
+
+                    h4{
+                         font-size: 1.15rem;
+                    }
+                    
+                    .item-box{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        padding-top: 1rem;
+                        padding-bottom: 1rem;
+                        width: 100%;
+             
+
+                        h4{
+                            text-align: center;
+                            margin: auto;
+                        }
+                    }
+
+
+                    .item-box-border{
+                        border-top: solid 3px $color-text ;
+                    }
+
+                    .item-top{
+                        margin: auto;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        height: 10rem;
+                        
+                        h4{
+                            margin: auto;
+                           
+                        }
+
+                        img{
+                            width: 3rem;
+                            margin: auto;
+                        }
+                    }
+
+                }
+                
+
+            }
+
+        }
+
+        .model-blue{
+            background-color: $model-blue;
+        }
+        .model-light-blue{
+            background-color: $model-light-blue;
+        }
+
+        .model-yellow{
+            background-color: $model-yellow;
+        }
+
+        .model-light-yellow{
+            background-color: $model-light-yellow;
+        }
+
+        .model-green{
+            background-color: $model-green;
+        }
+
+        .model-light-green{
+            background-color: $model-light-green;
+        }
+
+        .model-pink{
+            background-color: $model-pink;
+        }
+
+        .model-light-pink{
+            background-color: $model-light-pink;
+        }
+  }
+
+
+    }
+}
+
+// ==========================================
+// FAQ Section
+// ==========================================
+.join-faq {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+    &-item {
+        border-bottom: 1px solid #e9edf2;
+        overflow: hidden;
+        transition: all 0.3s ease;
+
+        &[open] {
+            .join-faq-toggle::after { opacity: 0; }
+            .join-faq-body { max-height: 800px; }
+        }
+    }
+
+    &-summary {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        padding: 1.25rem 0;
+        list-style: none;
+
+        &::-webkit-details-marker { display: none; }
+    }
+
+    &-heading {
+        display: flex;
+        align-items: baseline;
+        gap: 0.6rem;
+        font-family: "M PLUS 1p", sans-serif;
+    }
+
+    &-q {
+        color: $color-red;
+        font-weight: 900;
+        font-size: 1.2rem;
+        flex-shrink: 0;
+
+        @media (max-width: 768px) { font-size: 1rem; }
+    }
+
+    &-question {
+        font-weight: 700;
+        font-size: 1.1rem;
+        color: $color-text;
+        line-height: 1.6;
+
+        @media (max-width: 768px) { font-size: 1rem; }
+    }
+
+    &-toggle {
+        position: relative;
+        width: 1.5rem;
+        height: 1.5rem;
+        flex-shrink: 0;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            background-color: $color-primary;
+            border-radius: 1px;
+            transition: all 0.25s ease;
+        }
+
+        &::before {
+            top: 50%; left: 0; right: 0; height: 3px; transform: translateY(-50%);
+        }
+
+        &::after {
+            left: 50%; top: 0; bottom: 0; width: 3px; transform: translateX(-50%);
+        }
+    }
+
+    &-body {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out;
+
+        p {
+            margin: 0 0 1rem 2.2rem;
+            line-height: 1.9;
+            color: $color-text;
+            font-size: 1rem;
+
+            &:last-child { margin-bottom: 1.5rem; }
+            @media (max-width: 768px) { margin-left: 1.5rem; }
+        }
+    }
+}
+
+
+// ==========================================
+// Footer & Sticky Actions
+// ==========================================
+.join-sticky-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #f2f2f2;
+    padding: 0.75rem 0;
+    text-align: center;
+    z-index: 9999;
+}
+
+.join-footer {
+    &-inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-cta {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
+        padding: 0.4rem 1.8rem;
+        color: $color-white;
+        background-color: $color-red;
+        border-radius: 999px;
+        text-decoration: none;
+        transition: background-color 0.25s ease;
+
+        &:hover {
+            background-color: $color-red-hover;
+            color: $color-white;
+        }
+
+        &-text {
+            font-size: 1.8rem;
+            font-weight: 800;
+            line-height: 1;
+            color: inherit;
+        }
+
+        &-icon {
+            height: 1.8em;
+            width: auto;
+            display: inline-block;
+            object-fit: contain;
+        }
+    }
+}
+
+.footer {
+    &-simple {
+        padding: 2rem 0;
+        background-color: $color-primary;
+        text-align: center;
+
+        &-inner {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+    }
+
+    &-logo {
+        height: 100px;
+        width: auto;
+        max-width: 100%;
+
+        @media (max-width: 768px) { height: 48px; }
+    }
+
+    &-copyright {
+        font-size: 0.9rem;
+        color: $color-white;
+        text-align: center;
+        padding-top: 2rem;
+    }
+
+    &-top,
+    &-wrapper {
+        background-color: $color-primary !important;
+    }
+}
