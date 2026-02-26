@@ -852,6 +852,57 @@ body {
   background-color: #f4d7de;
 }
 
+.pitch {
+  padding-top: 4rem;
+}
+.pitch .container {
+  padding: 2rem;
+  border-radius: 2rem;
+  background: url(/includes/images/ai-landing/section-5/pitch-bg.webp);
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 128/53;
+}
+.pitch .container .left-side {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.pitch .container .left-side h2 {
+  font-weight: bolder;
+  filter: drop-shadow(0px 5px 0px hsla(0, 0%, 0%, 0.2));
+  position: relative;
+  display: inline-block;
+  color: #00abce;
+  -webkit-text-stroke: 2px white;
+}
+.pitch .container .left-side h2::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+}
+.pitch .container .left-side h2 {
+  text-align: center;
+}
+.pitch .container .left-side h3 {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  color: #191919;
+  line-height: 1.2;
+  background-color: hsla(0, 0%, 100%, 0.6);
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+}
+
 .join-faq {
   margin-top: 4rem;
   margin-bottom: 4rem;
