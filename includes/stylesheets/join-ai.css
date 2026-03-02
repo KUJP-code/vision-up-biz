@@ -153,6 +153,11 @@ body {
   background-size: cover;
   background-position: center;
 }
+@media (max-width: 576.98px) {
+  .hero {
+    height: calc(100vh - 200px);
+  }
+}
 .hero .top-text {
   display: flex;
   flex-direction: column;
