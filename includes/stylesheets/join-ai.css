@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "M PLUS 1p", sans-serif;
   color: #191919;
@@ -1033,7 +1034,7 @@ body {
 }
 
 .final-cta {
-  background-color: #00abce;
+  background-color: £00adcf;
   margin-top: -2px;
 }
 .final-cta .container {
