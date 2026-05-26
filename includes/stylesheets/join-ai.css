@@ -139,7 +139,7 @@ body {
 }
 
 .hero {
-  background-image: url(/includes/images/ai-landing/hero/ai-landing-hero-desktop.jpg);
+  background-image: url(/includes/images/ai-landing/hero/hero_classroom_tv_optimized.png);
   height: calc(100vh - 120px);
   max-height: 1080px;
   display: flex;
