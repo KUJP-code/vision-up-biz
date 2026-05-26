@@ -189,6 +189,9 @@ body {
   color: #00adcf;
   font-weight: 900;
 }
+.inline-block-span {
+  display: inline-block;
+}
 .hero .text-contents {
   height: -moz-fit-content;
   height: fit-content;
