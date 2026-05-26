@@ -161,8 +161,8 @@ body {
     background-image: none !important;
     height: auto !important;
     max-height: none !important;
-    background-color: #f6f9fc;
-    padding-top: 1.5rem;
+    background-color: #ffffff;
+    padding-top: 0.75rem;
     display: block;
   }
   .hero .top-text {
@@ -170,11 +170,13 @@ body {
     opacity: 1 !important;
     animation: none !important;
     margin-top: 0 !important;
-    margin-bottom: 1rem !important;
-    padding: 1.75rem 1.25rem !important;
+    margin-bottom: 1.25rem !important;
+    padding: 1.5rem 1rem !important;
     border-radius: 20px !important;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 15px 35px rgba(0, 173, 207, 0.06), inset 0 0 0 1px rgba(255, 255, 255, 0.9) !important;
     width: 92% !important;
+    border-top: 5px solid #00adcf !important;
+    background: #ffffff !important;
   }
   .mobile-hero-image-wrapper {
     display: block !important;
@@ -756,6 +758,7 @@ body {
 @media (max-width: 767.98px) {
   .merits-and-model .container .three-merits {
     width: 100%;
+    border-radius: 2rem !important;
   }
 }
 .merits-and-model .container .three-merits .merit-box {
@@ -766,6 +769,18 @@ body {
   width: fit-content;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+@media (max-width: 767.98px) {
+  .merits-and-model .container .three-merits .merit-box {
+    width: 92% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 1.5rem 1rem !important;
+    border-radius: 1.5rem !important;
+  }
+  .merits-and-model .container .three-merits .merit-box h3 {
+    font-size: clamp(1.15rem, 5vw, 1.45rem) !important;
+  }
 }
 .merits-and-model .container .three-merits .merit-box h3 {
   line-height: 1;
