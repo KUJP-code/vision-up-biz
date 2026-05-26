@@ -2,58 +2,60 @@
 
   
  // Initialize Swiper for testimony carousel lel
-const testimonySwiper = new Swiper("#testimony-carousel", {
-  slidesPerView: 1.75,
-  centeredSlides: true,
-  spaceBetween: 20,
-  loop: true,
-  keyboard: {
-    enabled: true,
-  },
-  navigation: {
-    nextEl: ".testimony-swiper-button-right",
-    prevEl: ".testimony-swiper-button-left",
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
+if (document.querySelector("#testimony-carousel")) {
+  const testimonySwiper = new Swiper("#testimony-carousel", {
+    slidesPerView: 1.75,
+    centeredSlides: true,
+    spaceBetween: 20,
+    loop: true,
+    keyboard: {
+      enabled: true,
     },
+    navigation: {
+      nextEl: ".testimony-swiper-button-right",
+      prevEl: ".testimony-swiper-button-left",
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
 
-    576: {
-      slidesPerView: 1.25,
-    },
-    768: {
-      slidesPerView: 1.5,
-    },
+      576: {
+        slidesPerView: 1.25,
+      },
+      768: {
+        slidesPerView: 1.5,
+      },
 
-    1200: {
-      slidesPerView: 1.75,
+      1200: {
+        slidesPerView: 1.75,
+      },
     },
-  },
-  on: {
-    init: function () {
-      // Ensure active classes are managed dynamically after initialization
-      this.emit('slideChangeTransitionEnd');
+    on: {
+      init: function () {
+        // Ensure active classes are managed dynamically after initialization
+        this.emit('slideChangeTransitionEnd');
+      },
+      slideChangeTransitionStart: function () {
+        // Clear all active classes before the slide changes
+        this.slides.forEach(slide => {
+          clearActiveClasses(slide);
+        });
+      },
+      slideChangeTransitionEnd: function () {
+        // Apply active classes to the new active slide
+        applyActiveClasses(this.slides[this.activeIndex]);
+      },
+      activeIndexChange: function () {
+        // Handle changes to the active index (e.g., during dragging)
+        this.slides.forEach(slide => {
+          clearActiveClasses(slide);
+        });
+        applyActiveClasses(this.slides[this.activeIndex]);
+      },
     },
-    slideChangeTransitionStart: function () {
-      // Clear all active classes before the slide changes
-      this.slides.forEach(slide => {
-        clearActiveClasses(slide);
-      });
-    },
-    slideChangeTransitionEnd: function () {
-      // Apply active classes to the new active slide
-      applyActiveClasses(this.slides[this.activeIndex]);
-    },
-    activeIndexChange: function () {
-      // Handle changes to the active index (e.g., during dragging)
-      this.slides.forEach(slide => {
-        clearActiveClasses(slide);
-      });
-      applyActiveClasses(this.slides[this.activeIndex]);
-    },
-  },
-});
+  });
+}
 
 // Utility function to apply active classes
 function applyActiveClasses(slide) {
@@ -106,6 +108,7 @@ function setEqualHeight(slidesSelector) {
 
 // Initialize Swiper with dynamic centeredSlides
 function initializeSwiper() {
+  if (!document.querySelector("#service-carousel")) return;
   const swiper = new Swiper("#service-carousel", {
     slidesPerView: 1.1,
     spaceBetween: 10,
