@@ -76,6 +76,14 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 col-lg-9">
+                    <!-- Tab Switcher Buttons -->
+                    <div class="form-tabs-container" role="tablist" aria-label="お問い合わせ種別">
+                        <button type="button" role="tab" aria-selected="true" aria-controls="form_request_section" class="form-tab-btn active-tab-request" id="tab_request_btn">資料請求はコチラ</button>
+                        <button type="button" role="tab" aria-selected="false" aria-controls="form_setsumeikai_section" class="form-tab-btn" id="tab_setsumeikai_btn">説明会ご予約はコチラ</button>
+                    </div>
+
+                    <!-- Form 1: Information Request -->
+                    <div class="join-contact-form-section active-form" id="form_request_section" role="tabpanel" aria-labelledby="tab_request_btn">
                         <form
                             action="https://vision-up.app/inquiries"
                             method="post"
@@ -252,49 +260,6 @@
                             </div>
 
                             <div class="jf-group">
-                                <div class="jf-label">
-                                    <span class="req-badge">必須</span> 性別
-                                </div>
-                                <div class="jf-radio-row">
-                                    <label class="jf-radio"
-                                        ><input
-                                            type="radio"
-                                            name="inquiry[gender]"
-                                            value="male"
-                                            required
-                                        /><span>男性</span></label
-                                    >
-                                    <label class="jf-radio"
-                                        ><input
-                                            type="radio"
-                                            name="inquiry[gender]"
-                                            value="female"
-                                            required
-                                        /><span>女性</span></label
-                                    >
-                                </div>
-                            </div>
-
-                            <div class="jf-group">
-                                <label for="jf_age" class="jf-label"
-                                    ><span class="req-badge">必須</span>
-                                    年齢</label
-                                >
-                                <div class="jf-inline-after w-50">
-                                    <input
-                                        id="jf_age"
-                                        name="inquiry[age]"
-                                        type="number"
-                                        min="0"
-                                        max="120"
-                                        required
-                                        class="jf-input"
-                                    />
-                                    <span class="jf-suffix">歳</span>
-                                </div>
-                            </div>
-
-                            <div class="jf-group">
                                 <label for="jf_msg" class="jf-label"
                                     >ご質問等</label
                                 >
@@ -329,6 +294,211 @@
                             </div>
                         </form>
                     </div>
+
+                    <!-- Form 2: Setsumeikai Reservation -->
+                    <div class="join-contact-form-section" id="form_setsumeikai_section" role="tabpanel" aria-labelledby="tab_setsumeikai_btn">
+                        <form
+                            action="https://vision-up.app/inquiries"
+                            method="post"
+                            class="join-form"
+                        >
+                            <input
+                                type="hidden"
+                                name="inquiry[category]"
+                                value="join"
+                            />
+
+                            <div class="jf-group">
+                                <label for="jsf_name" class="jf-label"
+                                    ><span class="req-badge" style="background: #00adcf;">必須</span>
+                                    お名前</label
+                                >
+                                <input
+                                    id="jsf_name"
+                                    name="inquiry[name]"
+                                    type="text"
+                                    required
+                                    class="jf-input"
+                                    placeholder="山田 太郎"
+                                />
+                            </div>
+
+                            <div class="jf-group">
+                                <label for="jsf_org" class="jf-label"
+                                    >法人名</label
+                                >
+                                <input
+                                    id="jsf_org"
+                                    name="inquiry[org]"
+                                    type="text"
+                                    class="jf-input"
+                                    placeholder="株式会社ABC"
+                                />
+                            </div>
+
+                            <div class="jf-group">
+                                <label for="jsf_pref" class="jf-label"
+                                    ><span class="req-badge" style="background: #00adcf;">必須</span>
+                                    所在地</label
+                                >
+                                <select
+                                    id="jsf_pref"
+                                    name="inquiry[address_pref]"
+                                    required
+                                    class="jf-input"
+                                >
+                                    <option value="">都道府県名を選択してください</option>
+                                    <option>北海道</option><option>青森県</option><option>岩手県</option>
+                                    <option>宮城県</option><option>秋田県</option><option>山形県</option>
+                                    <option>福島県</option><option>茨城県</option><option>栃木県</option>
+                                    <option>群馬県</option><option>埼玉県</option><option>千葉県</option>
+                                    <option>東京都</option><option>神奈川県</option><option>新潟県</option>
+                                    <option>富山県</option><option>石川県</option><option>福井県</option>
+                                    <option>山梨県</option><option>長野県</option><option>岐阜県</option>
+                                    <option>静岡県</option><option>愛知県</option><option>三重県</option>
+                                    <option>滋賀県</option><option>京都府</option><option>大阪府</option>
+                                    <option>兵庫県</option><option>奈良県</option><option>和歌山県</option>
+                                    <option>鳥取県</option><option>島根県</option><option>岡山県</option>
+                                    <option>広島県</option><option>山口県</option><option>徳島県</option>
+                                    <option>香川県</option><option>愛媛県</option><option>高知県</option>
+                                    <option>福岡県</option><option>佐賀県</option><option>長崎県</option>
+                                    <option>熊本県</option><option>大分県</option><option>宮崎県</option>
+                                    <option>鹿児島県</option><option>沖縄県</option>
+                                </select>
+                            </div>
+
+                            <div class="jf-group">
+                                <label for="jsf_phone" class="jf-label"
+                                    ><span class="req-badge" style="background: #00adcf;">必須</span>
+                                    電話番号</label
+                                >
+                                <input
+                                    id="jsf_phone"
+                                    name="inquiry[phone]"
+                                    type="tel"
+                                    inputmode="numeric"
+                                    pattern="[0-9\-]+"
+                                    required
+                                    class="jf-input"
+                                    placeholder="0312345678　※ハイフンなし"
+                                />
+                            </div>
+
+                            <div class="jf-group">
+                                <label for="jsf_email" class="jf-label"
+                                    ><span class="req-badge" style="background: #00adcf;">必須</span>
+                                    メールアドレス</label
+                                >
+                                <input
+                                    id="jsf_email"
+                                    name="inquiry[email]"
+                                    type="email"
+                                    required
+                                    class="jf-input"
+                                    placeholder="info@abcdefg.com"
+                                />
+                            </div>
+
+                            <div class="jf-group">
+                                <label class="jf-label"
+                                    ><span class="req-badge" style="background: #00adcf;">必須</span>
+                                    説明会希望日時</label
+                                >
+                                
+                                <div class="date-time-group">
+                                    <div class="date-time-title">第1希望</div>
+                                    <div class="date-time-inputs">
+                                        <div class="dt-input-col">
+                                            <div class="dt-input-sublabel">日付を選択</div>
+                                            <input type="date" name="inquiry[date_1]" required class="jf-input" />
+                                        </div>
+                                        <div class="dt-input-col">
+                                            <div class="dt-input-sublabel">時間を選択</div>
+                                            <select name="inquiry[time_1]" required class="jf-input">
+                                                <option value="">希望時間を選択</option>
+                                                <option>10:00～</option><option>10:30～</option>
+                                                <option>11:00～</option><option>11:30～</option>
+                                                <option>12:00～</option><option>12:30～</option>
+                                                <option>13:00～</option><option>13:30～</option>
+                                                <option>14:00～</option><option>14:30～</option>
+                                                <option>15:00～</option><option>15:30～</option>
+                                                <option>16:00～</option><option>16:30～</option>
+                                                <option>17:00～</option><option>17:30～</option>
+                                                <option>18:00～</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="date-time-group">
+                                    <div class="date-time-title">第2希望</div>
+                                    <div class="date-time-inputs">
+                                        <div class="dt-input-col">
+                                            <div class="dt-input-sublabel">日付を選択</div>
+                                            <input type="date" name="inquiry[date_2]" required class="jf-input" />
+                                        </div>
+                                        <div class="dt-input-col">
+                                            <div class="dt-input-sublabel">時間を選択</div>
+                                            <select name="inquiry[time_2]" required class="jf-input">
+                                                <option value="">希望時間を選択</option>
+                                                <option>10:00～</option><option>10:30～</option>
+                                                <option>11:00～</option><option>11:30～</option>
+                                                <option>12:00～</option><option>12:30～</option>
+                                                <option>13:00～</option><option>13:30～</option>
+                                                <option>14:00～</option><option>14:30～</option>
+                                                <option>15:00～</option><option>15:30～</option>
+                                                <option>16:00～</option><option>16:30～</option>
+                                                <option>17:00～</option><option>17:30～</option>
+                                                <option>18:00～</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="jf-note-block">
+                                    <div class="jf-note-item">※所要時間は質問量によって変動しますが、40～60分程度ご想定ください。</div>
+                                    <div class="jf-note-item">※日数は限定されますが、土日の実施も受け付けております。</div>
+                                    <div class="jf-note-item">※日程(時間帯)が限られる場合は、以下のご質問項目に詳細をご記入ください。</div>
+                                </div>
+                            </div>
+
+                            <div class="jf-group">
+                                <label for="jsf_msg" class="jf-label"
+                                    >ご質問等</label
+                                >
+                                <textarea
+                                    id="jsf_msg"
+                                    name="inquiry[message]"
+                                    rows="6"
+                                    class="jf-input"
+                                ></textarea>
+                            </div>
+
+                            <div class="jf-group">
+                                <label class="jf-privacy">
+                                    <input
+                                        type="checkbox"
+                                        name="privacy_agreement"
+                                        required
+                                    />
+                                    「<a
+                                        href="https://www.p-up.world/privacypolicy/"
+                                        target="_blank"
+                                        rel="noopener"
+                                        >プライバシーポリシー</a
+                                    >」をご確認頂き、ご同意の上で送信を行ってください。
+                                </label>
+                            </div>
+
+                            <div class="jf-actions">
+                                <button type="submit" class="btn-red-blacktext" style="background: #00adcf; letter-spacing: 0.1em; padding: 1rem 3.5rem;">
+                                    説明会に申し込む
+                                </button>
+                                <div class="jf-success-msg">※希望日時と調節し、折り返しメールにて説明会日時をご案内いたします。</div>
+                            </div>
+                        </form>
+                    </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -357,5 +527,58 @@
             w3.includeHTML();
         </script>
         <script src="/includes/javascript/global.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const tabRequestBtn = document.getElementById("tab_request_btn");
+                const tabSetsumeikaiBtn = document.getElementById("tab_setsumeikai_btn");
+                const formRequestSection = document.getElementById("form_request_section");
+                const formSetsumeikaiSection = document.getElementById("form_setsumeikai_section");
+
+                function activateTab(type) {
+                    if (type === "setsumeikai") {
+                        tabSetsumeikaiBtn.classList.add("active-tab-setsumeikai");
+                        tabSetsumeikaiBtn.setAttribute("aria-selected", "true");
+                        tabRequestBtn.classList.remove("active-tab-request");
+                        tabRequestBtn.setAttribute("aria-selected", "false");
+                        formSetsumeikaiSection.classList.add("active-form");
+                        formRequestSection.classList.remove("active-form");
+                    } else {
+                        tabRequestBtn.classList.add("active-tab-request");
+                        tabRequestBtn.setAttribute("aria-selected", "true");
+                        tabSetsumeikaiBtn.classList.remove("active-tab-setsumeikai");
+                        tabSetsumeikaiBtn.setAttribute("aria-selected", "false");
+                        formRequestSection.classList.add("active-form");
+                        formSetsumeikaiSection.classList.remove("active-form");
+                    }
+                }
+
+                if (tabRequestBtn && tabSetsumeikaiBtn) {
+                    tabRequestBtn.addEventListener("click", function () {
+                        activateTab("request");
+                    });
+                    tabSetsumeikaiBtn.addEventListener("click", function () {
+                        activateTab("setsumeikai");
+                    });
+                }
+
+                // Check query params on load
+                const urlParams = new URLSearchParams(window.location.search);
+                const typeParam = urlParams.get("type");
+                if (typeParam === "setsumeikai" || typeParam === "request") {
+                    activateTab(typeParam);
+                } else {
+                    activateTab("request");
+                }
+
+                // Date input restriction (prevent selecting past dates)
+                const today = new Date();
+                const tomorrow = new Date(today);
+                tomorrow.setDate(tomorrow.getDate() + 1);
+                const minDateStr = tomorrow.toISOString().split("T")[0];
+                document.querySelectorAll('input[type="date"]').forEach(function (input) {
+                    input.setAttribute("min", minDateStr);
+                });
+            });
+        </script>
     </body>
 </html>
