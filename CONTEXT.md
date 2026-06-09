@@ -24,3 +24,8 @@ This project is a clone of the B2B landing page for **Kids UP AI Teacher** (host
 3.  **Title Wrap/Break Fixes:**
     *   Applied `white-space: nowrap` and `clamp()` to `.extravocation` h3 titles on desktop to eliminate ugly mid-word breaks (like "ランキン / グ" or "重視ポイ / ント").
     *   Used responsive media queries to revert to normal wrapping (`white-space: normal`) on mobile viewports.
+4.  **Site-Wide School Count & Code Quality:**
+    *   Unified direct-operated school count to **37** across all text and graphics (`index.html`, `en.html`, `success.html`, `graph-2.png`, `TrackRecord_blue.png`).
+    *   Cleaned up `navbar-join.html` component to remove nested `<head>` and duplicate GTM tags.
+    *   Added dynamic tomorrow-date restriction (`min` attribute) to Setsumeikai reservation date inputs in `join-contact.html` to prevent past bookings.
+    *   Polished transitions for tab-toggling and added hover shine keyframe animations for footer CTAs in `join.css`.
