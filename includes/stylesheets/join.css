@@ -1419,7 +1419,7 @@ body {
     flex-wrap: wrap;
 }
 .hero-badge-img {
-    height: 75px;
+    height: 95px;
     width: auto;
     filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.15));
     transition: transform 0.25s ease;
@@ -1433,7 +1433,7 @@ body {
         gap: 1rem;
     }
     .hero-badge-img {
-        height: 55px;
+        height: 70px;
     }
 }
 
