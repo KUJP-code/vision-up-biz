@@ -43,12 +43,13 @@
             const message = form.querySelector('textarea[name="inquiry[message]"]');
             
             if (date1.value || (date2 && date2.value)) {
-                let appendedDates = "\n\n";
-                if (date1.value) appendedDates += `【第一希望日時】 ${date1.value} ${time1 ? time1.value : ''}\n`;
-                if (date2 && date2.value) appendedDates += `【第二希望日時】 ${date2.value} ${time2 ? time2.value : ''}\n`;
+                let appendedDates = "==============================\n";
+                if (date1.value) appendedDates += `【第一希望日時】 ${date1.value} ${time1 ? time1.value : ''}〜\n`;
+                if (date2 && date2.value) appendedDates += `【第二希望日時】 ${date2.value} ${time2 ? time2.value : ''}〜\n`;
+                appendedDates += "\n";
                 
                 if (message && !message.value.includes("【第一希望日時】")) {
-                    message.value = message.value + appendedDates;
+                    message.value = appendedDates + message.value + "\n==============================";
                 }
             }
         }
